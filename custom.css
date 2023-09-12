@@ -41,20 +41,20 @@ p {
 }
 
 .HeaderButton {
-  background-color: darkred;
+  background-color: rgb(201, 11, 11);
   border-radius: 10px;
-  margin: 5px;
+  margin: 1%;
   padding: 10px 15px;
   border-color: transparent;
   color: #fff;
   width:15%;
    height: 40px;
   text-align: center;
-  text-anchor: middle;
+  text-decoration:none;
   }
 
-  .HeaderButton:hover {
-    background-color: darkgray;
-    color: #000000;
-    cursor: pointer;
-    }
+.HeaderButton:hover {
+background-color: darkgray;
+ color: #000000;
+ cursor: pointer;
+ }
