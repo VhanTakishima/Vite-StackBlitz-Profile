@@ -2,7 +2,13 @@
   margin: auto;
   padding: 0px;
 }
-
+a {
+  text-decoration: none;
+  color: #000000;
+}
+a:hover {
+  color: #ad070a;
+}
 body {
   background-color: #f4f4f4;
   margin: auto;
@@ -26,10 +32,9 @@ p {
 }
 /* Classes */
 
-.headercontainer{
+.headercontainer {
   max-width: 100%;
   min-width: 75%;
-
 }
 .container {
   max-width: 800px;
@@ -43,18 +48,34 @@ p {
 .HeaderButton {
   background-color: rgb(201, 11, 11);
   border-radius: 10px;
-  margin: 1%;
+  margin: 10em 10px;
   padding: 10px 15px;
   border-color: transparent;
   color: #fff;
-  width:15%;
-   height: 40px;
+  width: 15%;
+  height: 40px;
   text-align: center;
-  text-decoration:none;
-  }
+}
 
 .HeaderButton:hover {
-background-color: darkgray;
- color: #000000;
- cursor: pointer;
- }
+  background-color: darkgray;
+  color: #000000;
+  cursor: pointer;
+}
+
+.box1 {
+  background-color: pink;
+  border-color: blue;
+  list-style: georgian;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 10px 15px;
+}
+
+.box1 li {
+  display: inline;
+  list-style: none;
+}
+
+.box2 {
+}
