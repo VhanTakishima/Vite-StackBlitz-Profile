@@ -9,7 +9,16 @@ a {
 a:hover {
   color: #ad070a;
 }
+
+header {
+  background-color: #ff0004;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
 body {
+  background-image: image();
   background-color: #f4f4f4;
   margin: auto;
 }
@@ -52,9 +61,10 @@ p {
   padding: 10px 15px;
   border-color: transparent;
   color: #fff;
-  width: 15%;
-  height: 40px;
+  max-width: 10%;
+  height: 30px;
   text-align: center;
+  position: relative;
 }
 
 .HeaderButton:hover {
@@ -70,12 +80,39 @@ p {
   max-width: 900px;
   margin: 20px auto;
   padding: 10px 15px;
+  text-align: center;
 }
 
 .box1 li {
   display: inline;
   list-style: none;
 }
+.box1 p {
+ font-style: italic;
+}
+.logo{
+
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #cffc0ae8);}
 
 .box2 {
+}
+
+
+.btn{
+  background-color: rgb(15, 15, 15);
+  border-radius: 10px;
+  margin: 10px 10px;
+  padding: 10px 15px;
+  border-color: transparent;
+  color: #fff;
+  max-width: 10%;
+  width: 100px;
+  height: 30px;
+}
+.fixedtotop{
+  position: fixed;
+  top: 350px;
+  left: 90%;
 }
