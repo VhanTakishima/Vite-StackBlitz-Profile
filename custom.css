@@ -32,10 +32,11 @@ h1 {
 h2 {
   font-family: 'Arial black';
   color: #ff0004;
+  margin-top: 30px;
 }
 p {
   font-family: 'Trebuchet MS';
-  line-height: 1.2;
+  line-height: 1.3em;
   color: #000000;
   margin: auto;
   margin-top: 5px;
@@ -49,11 +50,13 @@ p {
 }
 .container {
   max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
+  margin: 50px auto;
+  padding: 40px;
   background-color: rgba(242, 242, 242, 100);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.219);
+  text-align: justify;
+  height: 500px;
 }
 
 .HeaderButton {
@@ -79,7 +82,8 @@ p {
   background-color: pink;
   border-color: blue;
   list-style: georgian;
-  max-width: 900px;
+  max-width: 100%;
+  width: fit-content;
   margin: 20px auto;
   padding: 10px 15px;
   text-align: center;
