@@ -26,12 +26,16 @@ body {
 }
 
 h1 {
-  font-family: 'Roboto', sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+text-transform: uppercase;
+letter-spacing: 10px;
+  word-spacing: 1px;
+
 }
 
 h2 {
   font-family: 'Arial black';
-  color: #ff0004;
+  color: #9c0a0a;
   margin-top: 30px;
 }
 p {
@@ -102,6 +106,11 @@ p {
 .logo:hover {
   filter: drop-shadow(0 0 2em #cffc0ae8);}
 
+
+
+  .logo img:hover{
+    filter: drop-shadow(0 0 2em #cffc0ae8);
+  }
 .box2 {
 }
 
