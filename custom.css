@@ -25,6 +25,12 @@ p {
   margin-bottom: 15px;
 }
 /* Classes */
+
+.headercontainer{
+  max-width: 100%;
+  min-width: 75%;
+
+}
 .container {
   max-width: 800px;
   margin: 20px auto;
@@ -35,8 +41,20 @@ p {
 }
 
 .HeaderButton {
-  background-color: transparent;
+  background-color: darkred;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px 15px;
   border-color: transparent;
   color: #fff;
   width:15%;
-}
+   height: 40px;
+  text-align: center;
+  text-anchor: middle;
+  }
+
+  .HeaderButton:hover {
+    background-color: darkgray;
+    color: #000000;
+    cursor: pointer;
+    }
