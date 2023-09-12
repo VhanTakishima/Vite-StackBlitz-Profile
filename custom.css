@@ -1,0 +1,42 @@
+* {
+  margin: auto;
+  padding: 0px;
+}
+
+body {
+  background-color: #f4f4f4;
+  margin: auto;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-family: 'Arial black';
+  color: #ff0004;
+}
+p {
+  font-family: 'Trebuchet MS';
+  line-height: 1.2;
+  color: #000000;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+/* Classes */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(242, 242, 242, 100);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.219);
+}
+
+.HeaderButton {
+  background-color: transparent;
+  border-color: transparent;
+  color: #fff;
+  width:15%;
+}
