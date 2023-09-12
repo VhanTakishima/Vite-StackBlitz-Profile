@@ -18,7 +18,9 @@ header {
 }
 
 body {
-  background-image: image();
+  background-image:url(public/BGtry.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #f4f4f4;
   margin: auto;
 }
