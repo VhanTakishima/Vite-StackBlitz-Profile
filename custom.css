@@ -135,25 +135,20 @@ nav ul li a:hover::after{
 .logo{
 
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #cffc0ae8);}
-
-
-
-  .logo img:hover{
-    filter: drop-shadow(0 0 2em #cffc0ae8);
-  }
+.RightImage{
+display: flex;
+flex-wrap: wrap;
+}
 .headertext{
-
   margin-top: 20px;
-  font-size: 30px;
+  font-size: 28px;
 }
 .headertext p{
 color: #fff;
 }
 .headertext h1{
   color: #fff;
-  font-size: 70px;
+  font-size: 50px;
   margin-top: 20px;
 }
 
