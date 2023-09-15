@@ -157,12 +157,12 @@ nav ul li a:hover::after {
 }
 
 .headertext h1 span {
-  color: red;
+  color: rgb(199, 1, 1);
   text-transform: uppercase;
 }
 
 .headertext p span {
-  color: red;
+  color: rgb(255, 0, 0);
   text-transform: uppercase;
 }
 
