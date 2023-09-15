@@ -6,9 +6,15 @@
 
 #header {
 margin: auto;
+width: 100vw;
+height:120vh;
+
+background-image: url("public/testimage.gif");
+background-size:cover;
+background-position: center;
 }
 
-body {
+#body {
   background-image:url(public/BGred.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -49,7 +55,6 @@ flex-wrap: wrap;
 }
 .headercontainer {
  padding: 50px 20px;
-  background-color: #000000;
   max-width: 100%;
   min-width: 75%;
 }
