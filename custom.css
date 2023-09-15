@@ -167,7 +167,7 @@ nav ul li a:hover::after {
 }
 
 .btn {
-  background-color: rgb(15, 15, 15);
+
   border-radius: 10px;
   margin: 10px 10px;
   padding: 10px 15px;
@@ -175,10 +175,13 @@ nav ul li a:hover::after {
   color: #fff;
   max-width: 10%;
   width: 100px;
-  height: 30px;
+  height: 20px;
 }
 .fixedtotop {
+  background-color: #9c0a0a;
   position: fixed;
-  top: 350px;
+  top: 500px;
   left: 90%;
+  text-align: center;
+  text-decoration: none;
 }
