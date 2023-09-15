@@ -8,13 +8,14 @@
   margin: auto 0px;
   width:100%;
   height:120vh;
-  background-image:url("public/BG01.png");
+  background-image:url("public/BG02.png");
   background-size: cover;
+
   background-position:center;
 }
 
 #body {
-  background-image: url(public/BGred.jpg);
+  background-image: url("public/BGred.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #f4f4f4;
@@ -23,7 +24,7 @@
 
 h1 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  letter-spacing: 10px;
+  letter-spacing: 7px;
   word-spacing: 1px;
 }
 
@@ -43,7 +44,6 @@ p {
 /* Classes */
 .logo {
 }
-
 nav {
   display: flex;
   align-items: center;
@@ -66,7 +66,7 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   position: relative;
-  font-size: 24px;
+  font-size: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-transform: uppercase;
 }
@@ -140,16 +140,20 @@ nav ul li a:hover::after {
   flex-wrap: wrap;
 }
 .headertext {
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 28px;
 }
 .headertext p {
+ margin: 5px;
   color: #fff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 35px;
 }
 .headertext h1 {
   color: #fff;
   font-size: 50px;
-  margin-top: 20px;
+  margin-top: 70px;
+  margin-bottom: 60px;
 }
 
 .headertext h1 span {
