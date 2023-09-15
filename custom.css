@@ -9,7 +9,7 @@ margin: auto;
 width: 100vw;
 height:120vh;
 
-background-image: url("public/testimage.gif");
+background-image: url("/testimage.gif");
 background-size:cover;
 background-position: center;
 }
