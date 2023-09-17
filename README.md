@@ -1,3 +1,5 @@
 # Vite-StackBlitz-Profile
 Consider this as my training grounds
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/vitejs-vite-rdr4gd)
+
+
+9/18 ADDED WHITE BORDER SO i CAN SEE THE MARGINS AND PADDINGS TEMPORARILY
