@@ -7,11 +7,7 @@
 #header {
   margin: auto 0px;
   height:120vh;
-  background-image:url("public/BG02F.png");
-  background-size: cover;
-  background-position:center;
 }
-
 #body {
   background-image: url("public/BGred.jpg");
   background-repeat: no-repeat;
@@ -44,9 +40,9 @@ p {
 }
 
 .headercontainer {
-  padding: 50px ;
-  flex-direction:row;
-  min-width: 25%;
+  background-color: black;
+  padding: 5px ;
+  flex-direction:column;
 }
 
 
@@ -65,12 +61,12 @@ p {
   border: #fff dashed 3px;
   display: flex;
   flex-wrap: wrap;
-  flex-basis:20%;
+  flex-basis:30%;
   flex-shrink: 0;
+  width: 40%;
 }
 .navilist{
-  font-size:30px;
-  text-align: center;
+  width: 75%;
   margin: 10px 20px;
   flex-direction: column;
   border: #fff dashed 3px;
@@ -83,14 +79,29 @@ p {
 }
 
 @media(min-width:750px){
-  .navi{
-  flex-direction: row;
-  margin-bottom:30px;
+  .headercontainer {
+    padding: 10px ;
+    flex-direction:row;
   }
-  .navilist{
+  .logo {
+    flex-basis:15%;
+    flex-shrink: 0;
+    }
+    .navi{
     flex-direction: row;
-
+    margin-bottom:30px;
+    }
+    .navilist{
+      flex-direction: row;
+      max-width: 48%;
+      text-align: center;
+      align-items: center;
+      align-content: center;
+    }
   }
+.navilist li {
+  border: #fff dashed 3px;
+
 }
 .navilist a {
   color: #fff;
@@ -99,6 +110,7 @@ p {
   font-size: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .navilist a::after {
@@ -115,8 +127,6 @@ p {
 .navilist a:hover::after {
   width: 100%;
 }
-
-
 
 
 .container {
@@ -172,8 +182,11 @@ p {
   flex-wrap: wrap;
 }
 .headertext {
-  margin-top: 10px;
+  margin-top: 5px;
   font-size: 28px;
+  background-image:url("public/BG02F.png");
+  background-size: cover;
+  background-position:center;
 }
 .headertext p {
  margin: 5px;
