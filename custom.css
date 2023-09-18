@@ -4,14 +4,37 @@
   list-style: none;
 }
 @font-face{
-  font-family: Thomas;
-  src:url(Fonts/ThomasFont.ttf);
+  font-family: SGrapes;
+  src:url(Fonts/Sunday Grapes.ttf);
 }
 @font-face{
   font-family: Aquatic;
   src:url(Fonts/Aquaticfont.ttf);
 }
-
+@font-face{
+  font-family:AngasV3B;
+  src:url(Fonts/AngasV3Bold.ttf);
+}
+@font-face{
+  font-family:AngasV3U;
+  src:url(Fonts/AngasV3Ultra.ttf);
+}
+@font-face{
+  font-family:Chopsic;
+  src:url(Fonts/Chopsic.otf);
+}
+@font-face{
+  font-family:Vampire;
+  src:url(Fonts/Vampire.ttf);
+}
+@font-face{
+  font-family:VampireI;
+  src:url(Fonts/VampireItalic.ttf);
+}
+@font-face{
+  font-family:Gow;
+  src:url(Fonts/GoW.TTF);
+}
 #header {
   margin: auto 0px;
   width: 100%;
@@ -105,7 +128,6 @@ p {
     justify-content: space-evenly;
   }
   .headertext h1 {
-    font-family: Aquatic;
     text-align: left;
   }
   .headertext p {
@@ -233,13 +255,14 @@ p {
   align-items: flex-start;
   border: #fff dashed 3px;
   color: #fff;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Trebuchet MS',serif;
   font-size: 35px;
 }
 .headertext h1 {
   width: 100%;
   border: #fff dashed 3px;
   color: #fff;
+  font-family:Thomas;
   font-size: 50px;
   margin-top: 20px;
   margin-bottom: 30px;
@@ -262,6 +285,7 @@ p {
 
 .headertext p span {
   color: rgb(255, 0, 0);
+  font-family: AngasV3B;
   text-transform: uppercase;
 }
 
