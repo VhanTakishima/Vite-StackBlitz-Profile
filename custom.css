@@ -7,6 +7,10 @@
   font-family: Thomas;
   src:url(Fonts/ThomasFont.ttf);
 }
+@font-face{
+  font-family: Aquatic;
+  src:url(Fonts/Aquaticfont.ttf);
+}
 
 #header {
   margin: auto 0px;
@@ -101,7 +105,7 @@ p {
     justify-content: space-evenly;
   }
   .headertext h1 {
-    font-family: Thomas;
+    font-family: Aquatic;
     text-align: left;
   }
   .headertext p {
