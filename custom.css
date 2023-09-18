@@ -8,8 +8,8 @@
   src:url(Fonts/SundayGrapes.ttf);
 }
 @font-face{
-  font-family: Rogue;
-  src:url(Fonts/.ttf);
+  font-family: BOO;
+  src:url(Fonts/RogueHeroHalftone.otf);
 }
 @font-face{
   font-family: Npool;
@@ -266,7 +266,7 @@ p {
   width: 100%;
   border: #fff dashed 3px;
   color: #fff;
-  font-family:SGrapes;
+  font-family:Vampire;
   font-size: 50px;
   margin-top: 20px;
   margin-bottom: 30px;
