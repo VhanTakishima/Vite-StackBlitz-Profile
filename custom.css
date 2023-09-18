@@ -3,6 +3,9 @@
   padding: 0px;
   list-style: none;
 }
+@font-face{
+  font-family: T;
+}
 
 #header {
   margin: auto 0px;
@@ -275,4 +278,45 @@ p {
   text-decoration: none;
 }
 .bodycontainer {
+}
+
+.footercontainer{
+  border: #fff dashed 2px;
+  background-color: red;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:column;
+}
+.footercontainer p{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  color:#fff;
+  }
+.footertitle{
+  border: #fff dashed 2px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 25px;
+  justify-content: center;
+  letter-spacing: 5px;
+}
+
+.footerlogocontainer{
+  border: #fff dashed 2px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.footerlogocontainer a svg{
+  padding: 10px;
+  flex-shrink: 0;
+  flex-grow: 1;
+  border: #fff dashed 2px;
+  color: #fff;
+  width: 40px;
 }
