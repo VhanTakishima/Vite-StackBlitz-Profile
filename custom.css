@@ -5,11 +5,15 @@
 }
 @font-face{
   font-family: SGrapes;
-  src:url(Fonts/Sunday Grapes.ttf);
+  src:url(Fonts/SundayGrapes.ttf);
+}
+@font-face{
+  font-family: SGrapes;
+  src:url(Fonts/SundayGrapes.ttf);
 }
 @font-face{
   font-family: Npool;
-  src:url(Fonts/Neuropool.ttf);
+  src:url(Fonts/Neuropool.otf);
 }
 @font-face{
   font-family:AngasV3B;
@@ -262,7 +266,7 @@ p {
   width: 100%;
   border: #fff dashed 3px;
   color: #fff;
-  font-family:Thomas;
+  font-family:SGrapes;
   font-size: 50px;
   margin-top: 20px;
   margin-bottom: 30px;
