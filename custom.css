@@ -9,7 +9,7 @@
 }
 @font-face{
   font-family: BOO;
-  src:url(Fonts/RogueHeroHalftone.otf);
+  src:url(Fonts/BlackOpsOne.ttf);
 }
 @font-face{
   font-family: Npool;
@@ -258,15 +258,16 @@ p {
   align-content: flex-start;
   align-items: flex-start;
   border: #fff dashed 3px;
+  
   color: #fff;
-  font-family: 'Trebuchet MS',serif;
+  font-family:BOO;
   font-size: 35px;
 }
 .headertext h1 {
   width: 100%;
   border: #fff dashed 3px;
   color: #fff;
-  font-family:Vampire;
+  font-family:BOO;
   font-size: 50px;
   margin-top: 20px;
   margin-bottom: 30px;
