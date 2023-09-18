@@ -277,8 +277,8 @@ p {
   border: #fff dashed 3px;
   display: flex;
   flex-wrap: wrap;
-  min-width: 35%;
-  max-width: 40%;
+  min-width: 20%;
+  max-width: 30%;
   height: auto;
   margin-right: 20px;
 }
@@ -357,5 +357,8 @@ p {
   border: #fff dashed 2px;
   color: #fff;
   width: 40px;
+}
+.footerlogocontainer a svg:hover{
+  filter: drop-shadow(0 0 10px rgb(82, 0, 0));
 }
 
