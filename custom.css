@@ -5,7 +5,7 @@
 }
 @font-face{
   font-family: Thomas;
-  src:url(Fonts/Thomas);
+  src:url(Fonts/ThomasFont.ttf);
 }
 
 #header {
@@ -101,6 +101,7 @@ p {
     justify-content: space-evenly;
   }
   .headertext h1 {
+    font-family: Thomas;
     text-align: left;
   }
   .headertext p {
