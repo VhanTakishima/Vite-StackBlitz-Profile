@@ -32,8 +32,8 @@
   src:url(Fonts/Vampire.ttf);
 }
 @font-face{
-  font-family:VampireI;
-  src:url(Fonts/VampireItalic.ttf);
+  font-family:TBold;
+  src:url(Fonts/Thunderbold.ttf);
 }
 @font-face{
   font-family:Gow;
@@ -166,7 +166,7 @@ p {
   text-decoration: none;
   position: relative;
   font-size: 20px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Trebuchet MS';
   text-transform: uppercase;
   text-align: center;
 }
@@ -258,19 +258,19 @@ p {
   align-content: flex-start;
   align-items: flex-start;
   border: #fff dashed 3px;
-  
   color: #fff;
-  font-family:BOO;
-  font-size: 35px;
+  font-family:Npool;
+  font-size: 30px;
 }
 .headertext h1 {
   width: 100%;
   border: #fff dashed 3px;
   color: #fff;
-  font-family:BOO;
-  font-size: 50px;
+  font-family:Npool;
+  font-size: 35px;
   margin-top: 20px;
   margin-bottom: 30px;
+  letter-spacing: 5px;
   text-align: left;
 }
 .headercontainer img {
@@ -286,12 +286,15 @@ p {
 .headertext h1 span {
   color: rgb(199, 1, 1);
   text-transform: uppercase;
+  font-family:Gow;
+  font-size: 60px;
 }
 
 .headertext p span {
   color: rgb(255, 0, 0);
   font-family: AngasV3B;
   text-transform: uppercase;
+  font-size: 35px;
 }
 
 .btn {
@@ -355,3 +358,4 @@ p {
   color: #fff;
   width: 40px;
 }
+
