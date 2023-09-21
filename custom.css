@@ -327,10 +327,15 @@ margin: 20px;
 .fixedtotop {
   background-color: #9c0a0a;
   position: fixed;
-  top: 500px;
-  left: 90%;
+  top: 400px;
+  left: 88%;
   text-align: center;
   text-decoration: none;
+}
+
+.fixedtotop:hover{
+  background-color: white;
+  color: #000000;
 }
 .bodycontainer {
   background-color: #450000;
