@@ -71,6 +71,21 @@ p {
   color: #000000;
 }
 /* Classes */
+
+
+/* raplacing Logo to much natural element */
+.randomletter {
+  font-family: AngasV3B;
+  font-size: 40px;
+  color:  white;
+  margin: 10px;
+  border-radius: 5px;
+}
+.randomletter:hover{
+  background-color: white;
+  color: black;
+}
+
 .logo {
 }
 
@@ -98,7 +113,7 @@ p {
 }
 
 .logo {
-  border: #fff dashed 3px;
+  border: lime solid 2px;
   display: flex;
   flex-wrap: wrap;
   flex-basis: 30%;
@@ -106,6 +121,9 @@ p {
   width: 40%;
   margin-left: 20px;
 }
+.randomletter {
+  outline: lime solid 2px;
+}  
 .navilist {
   max-width: 100%;
   margin: 10px 20px;
@@ -115,7 +133,11 @@ p {
   gap: 1px;
   color: #fff;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-between; 
+}
+
+.navilist > * {
+margin: 3px;
 }
 /* eto yung default pag whole screen */
 @media (min-width: 60em) {
@@ -151,6 +173,8 @@ p {
     align-content: center;
     gap: 1em;
   }
+
+
 }
 .navilist{
   text-align: center;
@@ -328,6 +352,7 @@ margin: 20px;
   align-content: center;
   justify-content: center;
   color:#fff;
+  margin-bottom:1em;
   }
 .footertitle{
   border: #fff dashed 2px;
@@ -341,17 +366,19 @@ margin: 20px;
 .footerlogocontainer{
   border: #fff dashed 2px;
   display: flex;
-  gap: 1em;
+  gap: 10px;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: space-between;
-  justify-content: space-between;
+  justify-content: center;
 }
-.footerlogocontainer > *{
+.footerlogocontainer a svg {
+  display: flex;
+  flex-wrap: wrap;
   padding: 10px;
-  flex-shrink: 0;
+  flex-shrink: 1;
   flex-grow: 1;
-  border: #fff dashed 2px;
+  border: lime dashed 2px;
   color: #fff;
   width: 40px;
 }

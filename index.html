@@ -12,6 +12,9 @@
   <body>
     <div id="header">
       <nav class="navi">
+        <div>
+          <p data-value="John" class="randomletter">John</p>
+        </div>
         <img
           class="logo"
           src="public/LogoAnimated.gif"
@@ -102,7 +105,7 @@
           <a href="https://facebook.com/VhanTakishima"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 20 20"><path fill="currentColor" fill-rule="evenodd" d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.792C0 19.506.494 20 1.104 20h9.578v-7.745H8.076V9.237h2.606V7.01c0-2.584 1.578-3.99 3.883-3.99c1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.596-1.496 1.47v1.927h2.989l-.39 3.018h-2.6V20h5.097c.61 0 1.104-.494 1.104-1.104V1.104C20 .494 19.506 0 18.896 0Z"/></svg></a>           
           <a href="mailto:vhantakishima@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 20 20"><path fill="currentColor" fill-rule="evenodd" d="m7.172 11.334l2.83 1.935l2.728-1.882l6.115 6.033c-.161.052-.333.08-.512.08H1.667c-.22 0-.43-.043-.623-.12l6.128-6.046ZM20 6.376v9.457c0 .247-.054.481-.15.692l-5.994-5.914L20 6.376ZM0 6.429l6.042 4.132l-5.936 5.858A1.663 1.663 0 0 1 0 15.833V6.43ZM18.333 2.5c.92 0 1.667.746 1.667 1.667v.586L9.998 11.648L0 4.81v-.643C0 3.247.746 2.5 1.667 2.5h16.666Z"/></svg></a>
        </div>
-       <p><br> VhanTakishima &copy; 2023 </p>
+       <p> VhanTakishima &copy; 2023 </p>
     </div>
     </footer>
   </body>
@@ -126,6 +129,22 @@
     });
   </script>
  
+<script>
+  let randlet = new Randletter(document.querySelector(".randomletter").onmouseover = event =>{
+  let iterations = 0;
+  setInterval(() => {event.target.innerText = event.target.innerText.split("")
+  .map((letter, index) => {
+    if(index < iterations){
+      return event.target.dataset.value[index];
+    }
 
+  return letters[Math.floor(Math.random() * 26)]);
+  .join("");
+if(iterations>=event.target.dataset.value.length) {clearInterval(interval);}
+iterations+=1;
+  },30);
+})
+
+</script>
 
 </html>
