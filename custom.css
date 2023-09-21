@@ -1,3 +1,6 @@
+:root{
+
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -61,32 +64,26 @@ h1 {
 h2 {
   font-family: 'Arial black';
   color: #9c0a0a;
-  margin-top: 30px;
 }
 p {
   font-family: 'Trebuchet MS';
   line-height: 1.3em;
   color: #000000;
-  margin: auto;
-  margin-top: 5px;
-  margin-bottom: 15px;
 }
 /* Classes */
 .logo {
 }
 
 .headercontainer {
-  border: #fff dashed 3px;
+  border: lime solid 2px;
   background-color: black;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
   flex-direction: column;
-  align-items: center;
-  align-content: center;
   width: 100%;
   justify-content: space-between;
-  margin-right:20px;
+  align-items: center;
 }
 
 .navi {
@@ -110,7 +107,7 @@ p {
   margin-left: 20px;
 }
 .navilist {
-  width: 75%;
+  max-width: 100%;
   margin: 10px 20px;
   flex-direction: column;
   border: #fff dashed 3px;
@@ -118,7 +115,6 @@ p {
   gap: 1px;
   color: #fff;
   flex-wrap: wrap;
-  flex-basis: 75%;
   justify-content: space-between;
 }
 /* eto yung default pag whole screen */
@@ -127,33 +123,33 @@ p {
     flex-direction: row;
   }
   .headercontainer img {
-    align-content: flex-end;
     justify-content: space-evenly;
   }
   .headertext h1 {
+
   }
   .headertext p {
-    width: 100%;
     font-size: 50%;
   }
   .headertext {
-    align-content: flex-start;
-    align-items: flex-start;
+    align-items: left;
+    justify-content: center;
     text-align: left;
   }
   .logo {
     flex-basis: 15%;
     flex-shrink: 0;
   }
-  .navi {
+  .navi  {
     flex-direction: row;
     margin-bottom: 30px;
   }
   .navilist {
     flex-direction: row;
-    max-width: 48%;
+    max-width: 100%;
     align-items: center;
     align-content: center;
+    gap: 1em;
   }
 }
 .navilist{
@@ -240,47 +236,44 @@ p {
   flex-wrap: wrap;
 }
 .headertext {
-  margin-top: 3px;
-  margin-left: 20px;
-  border: #fff dashed 3px;
+  border: lime dashed 3px;
   display: flex;
+  gap: 1em;
   flex-direction: column;
   flex-wrap: wrap;
   max-width: 100%;
   min-width: 55%;
-  text-align: center;
+  justify-content: space-evenly;
   /* background-image:url("public/BG02F.png");
   background-size: cover;
   background-position:center; */
 }
+.headertext > *{
+margin: 20px;
+}
 .headertext p {
-  width: 100%;
-  align-content: flex-start;
-  align-items: flex-start;
+  align-items: left;
   border: #fff dashed 3px;
   color: #fff;
   font-family:Npool;
-  font-size: 30px;
+  font-size: 25px;
+  justify-content: left;
 }
 .headertext h1 {
-  width: 100%;
   border: #fff dashed 3px;
   color: #fff;
   font-family:Npool;
   font-size: 35px;
-  margin-top: 20px;
-  margin-bottom: 30px;
   letter-spacing: 5px;
 }
 .headercontainer img {
-  border: #fff dashed 3px;
+  border: #fff dashed 2px;
   display: flex;
   flex-wrap: wrap;
   min-width: 30%;
-  max-width:40%;
-  height: 100%;
-  margin-right: 20px;
-margin-bottom: 50px;
+  max-width:35%;
+  margin: 10px 20px 10px 0px;
+  align-items: center;
 }
 
 .headertext h1 span {
@@ -294,7 +287,7 @@ margin-bottom: 50px;
   color: rgb(255, 0, 0);
   font-family: AngasV3B;
   text-transform: uppercase;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .btn {
@@ -348,13 +341,13 @@ margin-bottom: 50px;
 .footerlogocontainer{
   border: #fff dashed 2px;
   display: flex;
+  gap: 1em;
   flex-wrap: wrap;
   flex-direction: row;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
+  align-items: space-between;
+  justify-content: space-between;
 }
-.footerlogocontainer a svg{
+.footerlogocontainer > *{
   padding: 10px;
   flex-shrink: 0;
   flex-grow: 1;
