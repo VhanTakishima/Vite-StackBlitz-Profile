@@ -2,6 +2,7 @@
 
 }
 * {
+  z-index: 1;
   margin: 0px;
   padding: 0px;
   list-style: none;
@@ -65,11 +66,6 @@ h2 {
   font-family: 'Arial black';
   color: #9c0a0a;
 }
-p {
-  font-family: 'Trebuchet MS';
-  line-height: 1.3em;
-  color: #000000;
-}
 /* Classes */
 
 
@@ -110,7 +106,43 @@ p {
   gap: 1px;
   flex-direction: column;
   width: 100%;
+  z-index: 3;
 }
+.adminDD{
+  display: none;
+  color: white;
+  flex-direction: column;
+  flex-wrap: wrap;
+  outline: lime solid 1px;
+  background-color: #9c0a0a;
+  width: 60%;
+  max-width: 70%;
+  min-width: 50%;
+  align-items: center;
+  position: absolute;
+  right: 20px;
+  z-index: 5;
+}
+ 
+ .adminDDul{
+   outline: lime solid 1px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+  flex: 1;
+  justify-content:center;
+  gap: 1rem;
+  width: 60%;
+  max-width: 70%;
+  min-width: 50%;
+ }
+ .adminDD p{
+text-align: center;
+ }
+ .adminDDul li{
+  outline: lime solid 1px; 
+  padding: 5px;
+ }
 
 .logo {
   border: lime solid 2px;
@@ -164,7 +196,6 @@ margin: 3px;
   }
   .navi  {
     flex-direction: row;
-    margin-bottom: 30px;
   }
   .navilist {
     flex-direction: row;
@@ -173,7 +204,9 @@ margin: 3px;
     align-content: center;
     gap: 1em;
   }
-
+.adminDD{
+  margin-bottom: 30px;
+}
 
 }
 .navilist{
@@ -206,6 +239,13 @@ margin: 3px;
 .navilist a:hover::after {
   width: 100%;
 }
+
+.admin1{}
+
+.admin1:hover + .adminDD{
+display: flex;
+}
+
 
 .container {
   max-width: 800px;
