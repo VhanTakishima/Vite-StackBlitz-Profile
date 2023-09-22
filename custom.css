@@ -106,7 +106,7 @@ h2 {
   gap: 1px;
   flex-direction: column;
   width: 100%;
-  z-index: 3;
+  z-index: 1;
 }
 .adminDD{
   display: none;
@@ -116,12 +116,9 @@ h2 {
   outline: lime solid 1px;
   background-color: #9c0a0a;
   width: 60%;
-  max-width: 70%;
-  min-width: 50%;
   align-items: center;
   position: absolute;
   right: 20px;
-  z-index: 5;
 }
  
  .adminDDul{
@@ -203,12 +200,12 @@ margin: 3px;
     align-items: center;
     align-content: center;
     gap: 1em;
-  }
-.adminDD{
-  margin-bottom: 30px;
-}
+    }
+  .adminDD{
+    margin-bottom: 30px;
+}}
 
-}
+
 .navilist{
   text-align: center;
 }
@@ -238,12 +235,12 @@ margin: 3px;
 
 .navilist a:hover::after {
   width: 100%;
+  
 }
 
-.admin1{}
-
-.admin1:hover + .adminDD{
-display: flex;
+.admin1:hover + .adminDD {
+display: block;
+z-index: 2;
 }
 
 
