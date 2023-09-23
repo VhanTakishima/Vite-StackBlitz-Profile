@@ -369,11 +369,13 @@ margin: 20px;
   left: 88%;
   text-align: center;
   text-decoration: none;
+  z-index: 5;
 }
 
 .fixedtotop:hover{
   background-color: white;
   color: #000000;
+
 }
 
 #bodycontainer {
@@ -391,7 +393,6 @@ margin: 20px;
   flex-wrap: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 20px;
   width: 100%;
 }
 
@@ -401,10 +402,12 @@ margin: 20px;
   min-width: 15vw;
   text-align: center;
   padding: 10px;
+
   border-radius: 5px 5px 0 0; /* Add border-radius only to top corners */
 }
 
 .column {
+  z-index: 2;
   margin: 20px;
   display: flex;
   flex-direction: column;
@@ -420,6 +423,7 @@ margin: 20px;
   transition: background 0.3s ease;
 }
 
+
 .column:hover {
   background: rgb(255, 191, 191);
   opacity: 1;
@@ -432,7 +436,7 @@ margin: 20px;
 }
 
 .collapsible-section.expanded .collapsible-content {
-  max-height: 200vh; /* Adjust as needed */
+  max-height: 20px; /* Adjust as needed */
   opacity: 1;
 }
 
