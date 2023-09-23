@@ -2,7 +2,6 @@
 
 }
 * {
-  z-index: 1;
   margin: 0px;
   padding: 0px;
   list-style: none;
@@ -68,8 +67,7 @@ h2 {
 }
 /* Classes */
 
-
-/* raplacing Logo to much natural element */
+/* raplacing Logo to match natural element */
 .randomletter {
   font-family: AngasV3B;
   font-size: 40px;
