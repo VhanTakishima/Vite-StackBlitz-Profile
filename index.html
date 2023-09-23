@@ -24,21 +24,21 @@
         <ul class="navilist">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
-          <li><a href="#">Why Choose Me</a></li>
+          <li><a href="#bodycontainer">Why Choose Me</a></li>
           <li><a href="#Contact">Contact</a></li>
-          <li><a href="#" class="admin1">Admin Page</a></li>
+          <li><a href="#">Admin Page</a></li>
         </ul>
       </section>
-      <section class="adminDD"> 
+      <!-- <section class="adminDD"> 
         <p>Welcome, <span>Name placeholder </span></p>
-          <ul class="adminDDul">
+          <ul>
             <li>Log-in</li>
             <li>Lorem</li>
             <li>ipsum</li>
             <li>dolor</li>
           </ul>
-      </section>
-        </nav>
+      </section> -->
+    </nav>
       <div class="headercontainer">
         <!-- <img
         class="RightImage"
@@ -55,14 +55,27 @@
         <img src="public/BGRHS.png" alt=""> 
       </div>
     </div>
-    <div id="body"></div>
-      <div class="bodycontainer">...
-<br>
-<br>
-<br>
-<br>
+    <div id="body">
+      <div id="bodycontainer">
+        <section class="collapsible-section">
+            <div class="column">
+                <h2 class="collapsible-header">About</h2>
+                <p class="collapsible-content"> About content here...</p>
+            </div>
+            <div class="column">
+                <h2 class="collapsible-header">Experience</h2>
+                <p class="collapsible-content"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dictum mattis condimentum. Maecenas sed magna arcu. Vestibulum suscipit consectetur tortor in convallis. Donec ac augue congue, sagittis purus ac, accumsan tortor. Ut cursus felis a ante egestas aliquet. Praesent condimentum tristique nisl fringilla varius. Quisque pretium lorem ac nisi ornare, eget faucibus metus condimentum. Duis ut sagittis felis. In sit amet lorem faucibus, iaculis risus non, posuere lacus. Cras sem tellus, sagittis ac feugiat et, commodo vitae turpis. Cras porttitor lorem quis libero lobortis venenatis. Aliquam eu urna accumsan orci ornare commodo ac vitae tellus.</p>
+            </div>
+            <div class="column">
+                <h2 class="collapsible-header">Vision</h2>
+                <p class="collapsible-content"> Vision content here...</p>
+            </div>
+        </section>
+    </div>
+  </div>
+    
 
-      </div>
+
     <!-- planning to hide this div and appear when called
     <div class="container">
         <h2 id="aboutme">About Me</h2>
@@ -138,5 +151,5 @@
   </script>
   <!-- logo randomletters> -->
   <script src="RandLetterAnim.js"> </script>
-
+  <script src="WCM.js"></script>
 </html>
