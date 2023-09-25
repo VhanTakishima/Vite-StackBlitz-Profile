@@ -6,6 +6,9 @@
   padding: 0px;
   list-style: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 @font-face{
   font-family: SGrapes;
   src:url(Fonts/SundayGrapes.ttf);
@@ -25,10 +28,6 @@
 @font-face{
   font-family:AngasV3U;
   src:url(Fonts/AngasV3Ultra.ttf);
-}
-@font-face{
-  font-family:Chopsic;
-  src:url(Fonts/Chopsic.otf);
 }
 @font-face{
   font-family:Vampire;
@@ -181,7 +180,8 @@ margin: 3px;
   text-decoration: none;
   position: relative;
   font-size: 20px;
-  font-family: 'Trebuchet MS';
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
 }
@@ -351,6 +351,9 @@ margin: 20px;
   text-transform: uppercase;
   font-size: 30px;
 }
+.headertext .Marshal{
+  font-size: 12px;
+}
 
 .btn {
   border-radius: 10px;
@@ -365,7 +368,7 @@ margin: 20px;
 .fixedtotop {
   background-color: #9c0a0a;
   position: fixed;
-  top: 400px;
+  top: 505px;
   left: 88%;
   text-align: center;
   text-decoration: none;
@@ -384,7 +387,7 @@ margin: 20px;
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .collapsible-section {
@@ -399,16 +402,16 @@ margin: 20px;
 .collapsible-header {
   background: linear-gradient(180deg, rgb(255, 51, 51), rgb(107, 9, 9));
   color: white;
-  min-width: 15vw;
+  min-width: 10vw;
   text-align: center;
-  padding: 10px;
+  padding: 5px;
 
   border-radius: 5px 5px 0 0; /* Add border-radius only to top corners */
 }
 
 .column {
   z-index: 2;
-  margin: 20px;
+  margin: 10px;
   display: flex;
   flex-direction: column;
   flex-basis: 30%;
