@@ -66,21 +66,8 @@ h2 {
 }
 /* Classes */
 
-/* raplacing Logo to match natural element */
-.randomletter {
-  font-family: AngasV3B;
-  font-size: 40px;
-  color:  white;
-  margin-left: 20px;
-  border-radius: 5px;
-}
-.randomletter:hover{
-  background-color: white;
-  color: black;
-}
 
-.logo {
-}
+
 
 .headercontainer {
   border: lime solid 2px;
@@ -94,46 +81,7 @@ h2 {
   align-items: center;
 }
 
-.navi {
-  background-color: #000000;
-  border: #fff dashed 3px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1px;
-  flex-direction: column;
-  width: 100%;
-  z-index: 1;
-}
 
-
-.logo {
-  border: lime solid 2px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-basis: 30%;
-  flex-shrink: 0;
-  width: 40%;
-  margin-left: 20px;
-}
-.randomletter {
-  outline: lime solid 2px;
-}  
-.navilist {
-  max-width: 100%;
-  margin: 10px 20px;
-  flex-direction: column;
-  border: #fff dashed 3px;
-  display: flex;
-  gap: 1px;
-  color: #fff;
-  flex-wrap: wrap;
-  justify-content: space-between; 
-}
-
-.navilist > * {
-margin: 3px;
-}
 /* eto yung default pag whole screen */
 @media (min-width: 60em) {
   .headercontainer {
@@ -150,112 +98,10 @@ margin: 3px;
     justify-content: center;
     text-align: left;
   }
-  .logo {
-    flex-basis: 15%;
-    flex-shrink: 0;
-  }
-  .navi  {
-    flex-direction: row;
-  }
-  .navilist {
-    flex-direction: row;
-    max-width: 100%;
-    align-items: center;
-    align-content: center;
-    gap: 1em;
-    }
+  
   .adminDD{
     margin-bottom: 30px;
 }}
-
-
-.navilist{
-  text-align: center;
-}
-.navilist li {
-  border: #fff dashed 3px;
-}
-.navilist a {
-  color: #fff;
-  text-decoration: none;
-  position: relative;
-  font-size: 20px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.navilist a::after {
-  content: ' ';
-  width: 0%;
-  height: 3px;
-  position: absolute;
-  background: red;
-  left: 0;
-  bottom: -6px;
-  transition: 0.3s;
-}
-
-.navilist a:hover::after {
-  width: 100%;
-}
-
-/* .adminDD{
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  pointer-events: none;
-  padding: 10px; 
-  display: flex;
-  color: white;
-  flex-direction: column;
-  flex-wrap: wrap;
-  outline: lime solid 1px;
-  background-color: #9c0a0a;
-  width: 60%;
-  align-items: center;
-  position: absolute;
-  right: 20px;
-  z-index: 3;
-}
-
- .adminDD ul{
-   outline: lime solid 1px;
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-    flex: 1;
-    justify-content:space-evenly;
-    gap: 1rem;
-    width: 60%;
-    max-width: 70%;
-    min-width: 50%;
- }
- .adminDD p{
-text-align: center;
- }
- .adminDD ul li{
-  outline: lime solid 1px; 
-  padding: 5px;
- }
-
-.admin1:hover + .adminDD{
-  opacity: 1;
-  pointer-events: auto;
-  z-index: 4;
-} */
-
-/* .container {
-  max-width: 800px;
-  margin: 50px auto;
-  padding: 40px;
-  background-color: rgba(242, 242, 242, 100);
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.219);
-  text-align: justify;
-  height: 500px;
-} */
-
 .HeaderButton {
   background-color: rgb(201, 11, 11);
   border-radius: 10px;
@@ -317,7 +163,7 @@ margin: 20px;
   align-items: left;
   border: #fff dashed 3px;
   color: #fff;
-  font-family:Npool;
+  font-family: 'Dosis', sans-serif;
   font-size: 25px;
   justify-content: left;
 }
