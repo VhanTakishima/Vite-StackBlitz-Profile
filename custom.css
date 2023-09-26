@@ -39,11 +39,11 @@ html {
 }
 @font-face{
   font-family:Gow;
-  src:url(Fonts/GoW.TTF);
+  src:url(Fonts/GoW.ttf);
 }
 @font-face{
   font-family:Dosis;
-  src:url(Fonts/GoW.TTF);
+  src:url(Fonts/Dosis.ttf);
 }
 #header {
   margin: auto 0px;
@@ -69,9 +69,6 @@ h2 {
   color: #9c0a0a;
 }
 /* Classes */
-
-
-
 
 .headercontainer {
   border: lime solid 2px;
@@ -167,7 +164,7 @@ margin: 20px;
   align-items: left;
   border: #fff dashed 3px;
   color: #fff;
-  font-family: 'Dosis', sans-serif;
+  font-family: Npool;
   font-size: 25px;
   justify-content: left;
 }

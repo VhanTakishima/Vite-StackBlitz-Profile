@@ -82,6 +82,7 @@ margin: 3px;
   width: 100%;
 }
 
+/* eto yung default pag whole screen */
 @media (min-width: 60em) {
   .logo {
     flex-basis: 15%;
