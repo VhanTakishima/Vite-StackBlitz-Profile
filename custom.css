@@ -41,6 +41,10 @@ html {
   font-family:Gow;
   src:url(Fonts/GoW.TTF);
 }
+@font-face{
+  font-family:Dosis;
+  src:url(Fonts/GoW.TTF);
+}
 #header {
   margin: auto 0px;
   width: 100%;
