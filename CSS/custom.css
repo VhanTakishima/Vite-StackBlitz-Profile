@@ -218,7 +218,7 @@ margin: 20px;
   font-style: italic;
 }
 
-
+/* will be fixing for portrait mode */
 .btn {
   border-radius: 10px;
   margin: 10px 10px;
@@ -229,6 +229,8 @@ margin: 20px;
   width: 100px;
   height: 20px;
 }
+
+/* will be fixing for portrait mode */
 .fixedtotop {
   background-color: #9c0a0a;
   position: fixed;
@@ -264,8 +266,8 @@ margin: 20px;
 }
 
 .collapsible-header {
-  background: linear-gradient(180deg, rgb(255, 51, 51), rgb(107, 9, 9));
-  color: white;
+  background: var(--button-gradient);
+  color: var(--button-font-color);
   min-width: 10vw;
   text-align: center;
   padding: 5px;
@@ -273,7 +275,7 @@ margin: 20px;
 }
 
 .column {
-  outline: blue solid 2px;
+  outline: lime solid 2px;
   z-index: 2;
   margin: 10px;
   display: flex;
