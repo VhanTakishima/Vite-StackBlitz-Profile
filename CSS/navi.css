@@ -16,14 +16,13 @@
   background-color: #000000;
   border: #fff dashed 3px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1px;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
   z-index: 1;
+  max-width: 100%;
+  justify-content: space-between; 
 }
-.logo {
+/* .logo {
   border: lime solid 2px;
   display: flex;
   flex-wrap: wrap;
@@ -31,27 +30,25 @@
   flex-shrink: 0;
   width: 40%;
   margin-left: 20px;
-}
+} */
 .randomletter {
   outline: lime solid 2px;
+  margin-top: 10px;
+  text-align: center;
 }  
 .navilist {
-  max-width: 100%;
-  margin: 10px 20px;
-  flex-direction: column;
+  flex-direction: row;
   border: #fff dashed 3px;
   display: flex;
-  gap: 1px;
   color: #fff;
   flex-wrap: wrap;
-  justify-content: space-between; 
+  margin: 10px 20px;
+  gap: 1em;
+  text-align: center;
 }
 
 .navilist > * {
 margin: 3px;
-}
-.navilist{
-  text-align: center;
 }
 .navilist li {
   border: #fff dashed 3px;
@@ -82,20 +79,35 @@ margin: 3px;
   width: 100%;
 }
 
-/* eto yung default pag whole screen */
-@media (min-width: 60em) {
+/* eto yung default pag landscape or mas mataas na yung width screen  */
+@media (width < 790px) {
   .logo {
     flex-basis: 15%;
     flex-shrink: 0;
   }
   .navi  {
-    flex-direction: row;
-  }
-  .navilist {
-    flex-direction: row;
-    max-width: 100%;
+    flex-direction: column;
+    max-width:100%;
     align-items: center;
-    align-content: center;
-    gap: 1em;
+  }
+  .randomletter {
+    margin-top: 10px;
+    text-align: center;
+    width: 120px;
+    align-items: center;
+    justify-content: center;
+  }  
+  .navilist {
+    max-height: 130px;
+    align-items: right;
+    margin-right:20px;
+    justify-content:space-evenly; 
+    gap: 1px;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    }
+    .navilist a{
+      font-size:10pt;
     }
   }
