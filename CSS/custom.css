@@ -1,5 +1,4 @@
-:root{
-
+:root {
 }
 * {
   margin: 0px;
@@ -9,47 +8,52 @@
 html {
   scroll-behavior: smooth;
 }
-@font-face{
+
+/* fonts */
+@font-face {
   font-family: SGrapes;
-  src:url(Fonts/SundayGrapes.ttf);
+  src: url(../Fonts/SundayGrapes.ttf);
 }
-@font-face{
+@font-face {
   font-family: BOO;
-  src:url(Fonts/BlackOpsOne.ttf);
+  src: url(../Fonts/BlackOpsOne.ttf);
 }
-@font-face{
+@font-face {
   font-family: Npool;
-  src:url(Fonts/Neuropool.otf);
+  src: url(../Fonts/Neuropool.otf);
 }
-@font-face{
-  font-family:AngasV3B;
-  src:url(Fonts/AngasV3Bold.ttf);
+@font-face {
+  font-family: AngasV3B;
+  src: url(../Fonts/AngasV3Bold.ttf);
 }
-@font-face{
-  font-family:AngasV3U;
-  src:url(Fonts/AngasV3Ultra.ttf);
+@font-face {
+  font-family: AngasV3U;
+  src: url(../Fonts/AngasV3Ultra.ttf);
 }
-@font-face{
-  font-family:Vampire;
-  src:url(Fonts/Vampire.ttf);
+@font-face {
+  font-family: Vampire;
+  src: url(../Fonts/Vampire.ttf);
 }
-@font-face{
-  font-family:TBold;
-  src:url(Fonts/Thunderbold.ttf);
+@font-face {
+  font-family: TBold;
+  src: url(../Fonts/Thunderbold.ttf);
 }
-@font-face{
-  font-family:Gow;
-  src:url(Fonts/GoW.ttf);
+@font-face {
+  font-family: Gow;
+  src: url(../Fonts/GoW.TTF);
 }
-@font-face{
-  font-family:Dosis;
-  src:url(Fonts/Dosis.ttf);
+@font-face {
+  font-family: Dosis;
+  src: url(../Fonts/Dosis.ttf);
 }
+
+/* fonts ends here */
+
 #header {
   margin: auto 0px;
   width: 100%;
   height: auto;
-  background-image: url("https://www.transparenttextures.com/patterns/dark-exa.png");
+  background-image: url('https://www.transparenttextures.com/patterns/dark-exa.png');
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 #body {
@@ -89,8 +93,8 @@ h1 {
   background-size: cover;
   background-position:center; */
 }
-.headertext > *{
-margin: 20px;
+.headertext > * {
+  margin: 20px;
 }
 .headertext p {
   align-items: left;
@@ -103,14 +107,14 @@ margin: 20px;
 .headertext h1 {
   border: #fff dashed 3px;
   color: #fff;
-  font-family:Npool;
+  font-family: Npool;
   font-size: 35px;
   letter-spacing: 5px;
 }
 .headertext h1 span {
   color: rgb(199, 1, 1);
   text-transform: uppercase;
-  font-family:Gow;
+  font-family: Gow;
   font-size: 60px;
 }
 
@@ -120,12 +124,12 @@ margin: 20px;
   text-transform: uppercase;
   font-size: 30px;
 }
-.headertext .Marshal{
+.headertext .Marshal {
   font-size: 12px;
 }
 .myphoto {
   border: lime solid 2px;
-  object-position:center;
+  object-position: center;
   object-fit: cover;
   display: flex;
   flex-shrink: 1;
@@ -136,54 +140,57 @@ margin: 20px;
   align-items: center;
 }
 /* eto yung default pag portrait or mas mataas na yung width screen  */
-@media (width < 790px){
+@media (width < 790px) {
   .headercontainer {
     flex-direction: column-reverse;
   }
   .myphoto {
-    object-position:center;
+    object-position: center;
     object-fit: cover;
-    width:100%;
-    height:150px;
+    width: 100%;
+    height: 150px;
     aspect-ratio: 5/1;
   }
-  .headertext{
-    margin:0px;
+  .headertext {
+    margin: 0px;
     align-items: center;
     justify-content: center;
   }
-  .headertext > *{
+  .headertext > * {
     margin: 10px;
-    }
+  }
   .headertext p {
     font-size: 25px;
+    min-height: 10rem;
   }
   .headertext {
     align-items: left;
     justify-content: center;
     text-align: center;
   }
-  
-  .adminDD{
+
+  .adminDD {
     margin-bottom: 30px;
   }
   .column {
     min-width: 20%;
   }
-    .collapsible-section{
-      overflow-x: scroll;
-      scroll-snap-type: mandatory;
-    }
-    .collapsible-header{
-      font-size: 12px;
-    }
-    .collapsible-content{
-      font-size: 10px;
-    }
+  .collapsible-section {
+    overflow-x: scroll;
+  }
+  .collapsible-header {
+    font-size: 12px;
+  }
+  .collapsible-content {
+    font-size: 10px;
+  }
+  .footertitle {
+    text-align: center;
+  }
 }
 .HeaderButton {
   background-color: var(--highlighttext-color);
-  color:var(--primarytext-color);
+  color: var(--primarytext-color);
   border-radius: 10px;
   margin: 10em 10px;
   padding: 10px 15px;
@@ -241,15 +248,14 @@ margin: 20px;
   z-index: 5;
 }
 
-.fixedtotop:hover{
+.fixedtotop:hover {
   background-color: white;
   color: #000000;
-
 }
 
 #bodycontainer {
   background-color: #450000;
-  background-image: url("https://www.transparenttextures.com/patterns/dark-exa.png");
+  background-image: url('https://www.transparenttextures.com/patterns/dark-exa.png');
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   display: flex;
   flex-wrap: wrap;
@@ -260,8 +266,9 @@ margin: 20px;
   outline: 5px dashed lime;
   display: flex;
   flex-wrap: flex;
+  align-items: baseline;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
   width: 100%;
 }
 
@@ -290,9 +297,7 @@ margin: 20px;
   min-height: 1rem;
   justify-content: flex-start; /* Align content at the top */
   transition: background 0.3s ease;
-
 }
-
 
 .column:hover {
   background: rgb(255, 191, 191);
@@ -310,24 +315,22 @@ margin: 20px;
   opacity: 1;
 }
 
-
-.footercontainer{
+.footercontainer {
   border: #fff dashed 2px;
   background-color: red;
   color: #fff;
   display: flex;
   flex-wrap: wrap;
-  flex-direction:column;
-
+  flex-direction: column;
 }
-.footercontainer p{
+.footercontainer p {
   display: flex;
   align-content: center;
   justify-content: center;
-  color:#fff;
-  margin-bottom:1em;
-  }
-.footertitle{
+  color: #fff;
+  margin-bottom: 1em;
+}
+.footertitle {
   border: #fff dashed 2px;
   display: flex;
   flex-wrap: wrap;
@@ -336,7 +339,7 @@ margin: 20px;
   letter-spacing: 5px;
 }
 
-.footerlogocontainer{
+.footerlogocontainer {
   border: #fff dashed 2px;
   display: flex;
   gap: 10px;
@@ -355,7 +358,6 @@ margin: 20px;
   color: #fff;
   width: 40px;
 }
-.footerlogocontainer a svg:hover{
+.footerlogocontainer a svg:hover {
   filter: drop-shadow(0 0 10px rgb(82, 0, 0));
 }
-

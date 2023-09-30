@@ -1,14 +1,64 @@
+:root {
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* fonts */
+@font-face {
+  font-family: SGrapes;
+  src: url(../Fonts/SundayGrapes.ttf);
+}
+@font-face {
+  font-family: BOO;
+  src: url(../Fonts/BlackOpsOne.ttf);
+}
+@font-face {
+  font-family: Npool;
+  src: url(../Fonts/Neuropool.otf);
+}
+@font-face {
+  font-family: AngasV3B;
+  src: url(../Fonts/AngasV3Bold.ttf);
+}
+@font-face {
+  font-family: AngasV3U;
+  src: url(../Fonts/AngasV3Ultra.ttf);
+}
+@font-face {
+  font-family: Vampire;
+  src: url(../Fonts/Vampire.ttf);
+}
+@font-face {
+  font-family: TBold;
+  src: url(../Fonts/Thunderbold.ttf);
+}
+@font-face {
+  font-family: Gow;
+  src: url(../Fonts/GoW.TTF);
+}
+@font-face {
+  font-family: Dosis;
+  src: url(../Fonts/Dosis.ttf);
+}
+
+/* fonts ends here */
 
 /* raplacing Logo to match natural element */
 .randomletter {
   font-family: AngasV3B;
-  text-transform:uppercase;
+  text-transform: uppercase;
   font-size: 40px;
-  color:  white;
+  color: white;
   margin-left: 20px;
   border-radius: 5px;
 }
-.randomletter:hover{
+.randomletter:hover {
   background-color: white;
   color: black;
 }
@@ -20,7 +70,7 @@
   width: 100%;
   z-index: 1;
   max-width: 100%;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 /* .logo {
   border: lime solid 2px;
@@ -35,7 +85,7 @@
   outline: lime solid 2px;
   margin-top: 10px;
   text-align: center;
-}  
+}
 .navilist {
   flex-direction: row;
   border: #fff dashed 3px;
@@ -43,12 +93,13 @@
   color: #fff;
   flex-wrap: wrap;
   margin: 10px 20px;
+  align-items: center;
   gap: 1em;
   text-align: center;
 }
 
 .navilist > * {
-margin: 3px;
+  margin: 3px;
 }
 .navilist li {
   border: #fff dashed 3px;
@@ -59,7 +110,6 @@ margin: 3px;
   position: relative;
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
 }
@@ -85,9 +135,9 @@ margin: 3px;
     flex-basis: 15%;
     flex-shrink: 0;
   }
-  .navi  {
+  .navi {
     flex-direction: column;
-    max-width:100%;
+    max-width: 100%;
     align-items: center;
   }
   .randomletter {
@@ -96,18 +146,18 @@ margin: 3px;
     width: 120px;
     align-items: center;
     justify-content: center;
-  }  
+  }
   .navilist {
     max-height: 130px;
     align-items: right;
-    margin-right:20px;
-    justify-content:space-evenly; 
+    margin-right: 20px;
+    justify-content: space-evenly;
     gap: 1px;
     display: flex;
     overflow: hidden;
     width: 100%;
-    }
-    .navilist a{
-      font-size:10pt;
-    }
   }
+  .navilist a {
+    font-size: 10pt;
+  }
+}
