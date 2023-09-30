@@ -186,6 +186,7 @@ h1 {
   }
   .footertitle {
     text-align: center;
+    text-justify: newspaper;
   }
 }
 .HeaderButton {
