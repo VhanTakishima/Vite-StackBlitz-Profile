@@ -112,7 +112,7 @@ h1 {
   letter-spacing: 5px;
 }
 .headertext h1 span {
-  color: rgb(199, 1, 1);
+  color: var(--highlighttext-color);
   text-transform: uppercase;
   font-family: Gow;
   font-size: 60px;

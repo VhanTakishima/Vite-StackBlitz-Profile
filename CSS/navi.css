@@ -63,7 +63,7 @@ html {
   color: black;
 }
 .navi {
-  background-color: #000000;
+  background-color: var(--navibg-color);
   border: #fff dashed 3px;
   display: flex;
   flex-direction: row;
