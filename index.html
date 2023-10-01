@@ -21,25 +21,25 @@
     <style></style>
   </head>
   <body>
-    <form class="colorpicker" class="hidden" action="">
-      <fieldset> 
-      <legend class="visuallyhidden"> pick a color scheme </legend>
-       <label for="theme" class="visuallyhidden">Vampire</label>
-       <input type="radio" id="default" name="theme" checked>
+  <form id="colorPickerForm" class="colorpicker hidden" action="">
+  <fieldset> 
+  <legend class="visuallyhidden"> pick a color scheme </legend>
+   <label for="default" class="visuallyhidden">Vampire</label>
+   <input type="radio" id="default" name="theme" checked>
 
-       <label for="theme" class="visuallyhidden">Knight</label>
-       <input type="radio" id="blue" name="theme">
+   <label for="blue" class="visuallyhidden">Knight</label>
+   <input type="radio" id="blue" name="theme">
 
-       <label for="theme" class="visuallyhidden">Druid</label>
-       <input type="radio" id="green" name="theme">
+   <label for="green" class="visuallyhidden">Druid</label>
+   <input type="radio" id="green" name="theme">
 
-       <label for="theme" class="visuallyhidden">Rogue</label>
-       <input type="radio" id="orange" name="theme">
+   <label for="orange" class="visuallyhidden">Rogue</label>
+   <input type="radio" id="orange" name="theme">
 
-       <label for="theme" class="visuallyhidden">Saint</label>
-       <input type="radio" id="light" name="theme">
-      </fieldset>
-     </form>
+   <label for="light" class="visuallyhidden">Saint</label>
+   <input type="radio" id="light" name="theme">
+  </fieldset>
+ </form>
     <div id="header">
            <nav>
       <section class="navi">
@@ -50,7 +50,7 @@
         <ul class="navilist">
           <li><a href="index.html">Home</a></li>
           <li><a href="#bodycontainer">About</a></li>
-          <li id="dropdownButton"><a href="#">Themes</a></li>
+          <li id="dropdownButton"><a href="#" id="themesLink">Themes</a></li>
           <li><a href="WCM.html">Why Choose Me</a></li>
           <li><a href="#Contact">Contact</a></li>
           <li><a href="#">Admin Page</a></li>
@@ -145,4 +145,5 @@
   <!-- logo randomletters -->
   <script src="RandLetterAnim.js"> </script>
   <script src="WCM.js"></script>
+  <script src="themes-selector.js"></script>
 </html>

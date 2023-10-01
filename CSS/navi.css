@@ -130,7 +130,9 @@ html {
 }
 
 /* for dropdown picker */
-
+.hidden{
+ display: none;
+}
 .visuallyhidden{
 clip:rect(0 0 0 0);
 clip-path: inset(50%);
