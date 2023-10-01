@@ -140,15 +140,24 @@ position: absolute;
 white-space: nowrap;
 width: 1px;}
 
+.colorpicker{
+display:flex;
+flex:wrap;
+position: absolute;
 
+width: 100%;
+
+}
 .colorpicker .visible {
   opacity: 1; /* Initially, set the opacity to 0 */
   transition: opacity 0.3s ease-in-out; /* Add a transition for opacity */
+  z-index: 10;
 }
 
 .colorpicker .hidden {
   opacity: 0;
   display: none;
+  z-index: -1;
 }
 
 

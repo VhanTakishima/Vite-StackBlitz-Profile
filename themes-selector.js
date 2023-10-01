@@ -1,17 +1,15 @@
 // Function to show the color picker form
-// Function to show the color picker form
 function showColorPicker() {
   const colorPickerForm = document.getElementById("colorpicker");
-  colorPickerForm.classList.remove("hidden");
-  colorPickerForm.classList.add("visible");
-} 
+  colorPickerForm.style.opacity = "1";
+}
 
 // Function to hide the color picker form
 function hideColorPicker() {
   const colorPickerForm = document.getElementById("colorpicker");
-  colorPickerForm.classList.remove("visible");
-  colorPickerForm.classList.add("hidden");
+  colorPickerForm.style.opacity = "0";
 }
+
 // Event listener for the "Themes" link to show the color picker form
 const themesLink = document.getElementById("themesLink");
 themesLink.addEventListener("click", function (event) {
@@ -26,7 +24,7 @@ let timer; // Declare a timer variable
 function startTimer() {
   timer = setTimeout(() => {
     hideColorPicker(); // Hide the color picker form
-  }, 3000); // 10 seconds (10000 milliseconds)
+  }, 3000); // 3 seconds (3000 milliseconds)
 }
 
 // Event listeners to reset the timer on user interaction
