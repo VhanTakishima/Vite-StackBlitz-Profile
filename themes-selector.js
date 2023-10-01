@@ -1,12 +1,15 @@
 // Function to show the color picker form
 function showColorPicker() {
-  const colorPickerForm = document.getElementById("colorPickerForm");
+  const colorPickerForm = document.getElementById("colorpicker");
   colorPickerForm.classList.remove("hidden");
+  colorPickerForm.classList.add("visible");
+  
 }
 
 // Function to hide the color picker form
 function hideColorPicker() {
-  const colorPickerForm = document.getElementById("colorPickerForm");
+  const colorPickerForm = document.getElementById("colorpicker");
+  colorPickerForm.classList.remove("visible");
   colorPickerForm.classList.add("hidden");
 }
 
