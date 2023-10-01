@@ -129,6 +129,51 @@ html {
   width: 100%;
 }
 
+/* for dropdown picker */
+
+.visuallyhidden{
+clip:rect(0 0 0 0);
+clip-path: inset(50%);
+height: 1px;
+overflow: hidden;
+position: absolute;
+white-space: nowrap;
+width: 1px;}
+
+.colorpicker > fieldset
+{
+  border: 0;
+  display: flex;
+  gap:2rem;
+  background-color:rgb(238, 238, 238);
+  width: fit-content;
+  padding: 1rem 3rem;
+  margin-inline: auto;
+  border-radius: 0 0 1rem 1rem;
+}
+.colorpicker input[type="radio"]{
+  appearance:none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 3px solid var(--radio-color,CurrentColor);
+  border-radius: 50%;
+}
+
+input[type="radio"]#blue{
+  --radio-color:blue;
+}
+input[type="radio"]#green{
+  --radio-color:green;
+}
+input[type="radio"]#green{
+  --radio-color:orange;
+}
+input[type="radio"]#light{
+  --radio-color:gold;
+}
+
+
+
 /* eto yung default pag landscape or mas mataas na yung width screen  */
 @media (width < 790px) {
   .logo {

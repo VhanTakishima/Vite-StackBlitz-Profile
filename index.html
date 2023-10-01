@@ -21,8 +21,27 @@
     <style></style>
   </head>
   <body>
+    <form class="colorpicker" class="hidden" action="">
+      <fieldset> 
+      <legend class="visuallyhidden"> pick a color scheme </legend>
+       <label for="theme" class="visuallyhidden">Vampire</label>
+       <input type="radio" id="default" name="theme" checked>
+
+       <label for="theme" class="visuallyhidden">Knight</label>
+       <input type="radio" id="blue" name="theme">
+
+       <label for="theme" class="visuallyhidden">Druid</label>
+       <input type="radio" id="green" name="theme">
+
+       <label for="theme" class="visuallyhidden">Rogue</label>
+       <input type="radio" id="orange" name="theme">
+
+       <label for="theme" class="visuallyhidden">Saint</label>
+       <input type="radio" id="light" name="theme">
+      </fieldset>
+     </form>
     <div id="header">
-      <nav>
+           <nav>
       <section class="navi">
         <div>
           <!-- NTS: Need gumawa ng official logo, di pwedeng ganito lang yung dalawang logo, also using this as universal HOMWE link -->
@@ -31,11 +50,13 @@
         <ul class="navilist">
           <li><a href="index.html">Home</a></li>
           <li><a href="#bodycontainer">About</a></li>
+          <li id="dropdownButton"><a href="#">Themes</a></li>
           <li><a href="WCM.html">Why Choose Me</a></li>
           <li><a href="#Contact">Contact</a></li>
           <li><a href="#">Admin Page</a></li>
         </ul>
     </nav>
+  
       <div class="headercontainer">
         <div class="headertext">
           <h1>
