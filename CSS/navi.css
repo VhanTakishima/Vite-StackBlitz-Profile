@@ -140,15 +140,17 @@ position: absolute;
 white-space: nowrap;
 width: 1px;}
 
-.colorpicker .visible{
-  /* ... your existing CSS styles ... */
+
+.colorpicker .visible {
   opacity: 1; /* Initially, set the opacity to 0 */
   transition: opacity 0.3s ease-in-out; /* Add a transition for opacity */
 }
-.colorpicker .hidden{
-  opacity:0;
+
+.colorpicker .hidden {
+  opacity: 0;
   display: none;
-  }
+}
+
 
 .colorpicker > fieldset
 {
