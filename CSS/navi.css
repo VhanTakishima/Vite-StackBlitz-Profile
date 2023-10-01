@@ -159,13 +159,16 @@ width: 1px;}
   border-radius: 50%;
 }
 
+input[type="radio"]#default{
+  --radio-color:red;
+}
 input[type="radio"]#blue{
   --radio-color:blue;
 }
 input[type="radio"]#green{
   --radio-color:green;
 }
-input[type="radio"]#green{
+input[type="radio"]#orange{
   --radio-color:orange;
 }
 input[type="radio"]#light{

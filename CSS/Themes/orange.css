@@ -1,0 +1,8 @@
+:root{
+  --primarybackground-color:rgb(241, 182, 52);
+  --primarytext-color:black;
+  --highlighttext-color:rgb(255, 72, 0);
+  --button-gradient:linear-gradient(180deg, orange, rgb(255, 72, 0));
+  --button-font-color:rgb(255, 72, 0);
+  --navibg-color:rgb(241, 182, 52);
+  }
