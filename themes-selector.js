@@ -24,7 +24,7 @@ let timer; // Declare a timer variable
 function startTimer() {
   timer = setTimeout(() => {
     hideColorPicker(); // Hide the color picker form
-  }, 3000); // 3 seconds (3000 milliseconds)
+  }, 1000); // 1 seconds (1000 milliseconds)
 }
 
 // Event listeners to reset the timer on user interaction
