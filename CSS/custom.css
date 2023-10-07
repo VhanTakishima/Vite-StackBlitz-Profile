@@ -128,6 +128,7 @@ h1 {
   font-size: 12px;
 }
 .myphoto {
+  src:var(--image-source);
   border: lime solid 2px;
   object-position: center;
   object-fit: cover;
@@ -318,8 +319,8 @@ h1 {
 
 .footercontainer {
   border: #fff dashed 2px;
-  background-color: red;
-  color: #fff;
+  background-color: var(--footer-color);
+  color: var(--primarytext-color);
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
