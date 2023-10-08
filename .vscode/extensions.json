@@ -1,6 +1,7 @@
 {
     "recommendations": [
         "negokaz.live-server-preview",
-        "ms-vscode.live-server"
+        "ms-vscode.live-server",
+        "ritwickdey.liveserver"
     ]
 }
