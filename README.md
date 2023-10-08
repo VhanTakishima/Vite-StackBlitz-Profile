@@ -11,4 +11,4 @@ Consider this as my training grounds
 10/3 successfully implemented theme color change (after 3 hours of debug and re-testing) using root:has on navi.css -- aayusin nlang yung ibang kulay and mag dadagdag nlang ng ibang kulay para di masakit sa mata.. pero overall napagana yung self task ko..
 Future task-- adding default color scheme and saving last selected color scheme using local storage key and value.
 
-10/9 getting in depth with Git and Github commands
+10/9 getting in depth with Git and Github commands -- I was used to stackblitz with so much automatic straight commit and push funtionality -- I need to standarize my process that's why I'm getting the basics of GitHub and Git -- so far I encounters so minimal errors on the precess, which is good 
