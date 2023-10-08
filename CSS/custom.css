@@ -233,7 +233,7 @@ h1 {
   margin: 10px 10px;
   padding: 10px 15px;
   border-color: transparent;
-  color: var(--primarytext-color);
+  color: var(--button-font-color);
   max-width: 10%;
   width: 100px;
   height: 20px;
@@ -290,8 +290,8 @@ h1 {
   display: flex;
   flex-direction: column;
   flex-basis: 30%;
-  background-color: aliceblue;
-  color: #000000;
+  background-color:var(--secondarybackground-color);
+  color: var(--columntext-color);
   cursor: pointer;
   border-radius: 5px;
   padding: 5px;
@@ -302,7 +302,7 @@ h1 {
 }
 
 .column:hover {
-  background: rgb(255, 191, 191);
+  background: var(--columnhovereffect-color);
   opacity: 1;
 }
 
@@ -320,7 +320,7 @@ h1 {
 .footercontainer {
   border: #fff dashed 2px;
   background-color: var(--footer-color);
-  color: var(--primarytext-color);
+  color: var(--navitext-color);
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -357,7 +357,7 @@ h1 {
   flex-shrink: 1;
   flex-grow: 1;
   border: lime dashed 2px;
-  color: #fff;
+  color: var(--navitext-color);
   width: 40px;
 }
 .footerlogocontainer a svg:hover {
