@@ -70,7 +70,7 @@ h1 {
 /* Classes */
 
 .headercontainer {
-  border: lime solid 2px;
+  /* border: lime solid 2px; */
   background-color: var(--primarybackground-color);
   display: flex;
   flex-wrap: wrap;
@@ -81,7 +81,7 @@ h1 {
   align-items: center;
 }
 .headertext {
-  border: lime dashed 3px;
+  /* border: lime dashed 3px; */
   display: flex;
   gap: 1em;
   flex-direction: column;
@@ -98,14 +98,14 @@ h1 {
 }
 .headertext p {
   align-items: left;
-  border: #fff dashed 3px;
+  /* border: #fff dashed 3px; */
   color:var(--primarytext-color);
   font-family: Npool;
   font-size: 25px;
   justify-content: left;
 }
 .headertext h1 {
-  border: #fff dashed 3px;
+  /* border: #fff dashed 3px; */
   color:var(--primarytext-color);
   font-family: Npool;
   font-size: 35px;
@@ -129,7 +129,7 @@ h1 {
 }
 .myphoto {
   src:var(--image-source);
-  border: lime solid 2px;
+  /* border: lime solid 2px; */
   object-position: center;
   object-fit: cover;
   display: flex;
@@ -256,7 +256,7 @@ h1 {
 }
 
 #bodycontainer {
-  background-color: #450000;
+  background-color: var(--primarybackground-color);
   background-image: url('https://www.transparenttextures.com/patterns/dark-exa.png');
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   display: flex;
@@ -265,7 +265,7 @@ h1 {
 }
 
 .collapsible-section {
-  outline: 5px dashed lime;
+  /* outline: 5px dashed lime; */
   display: flex;
   flex-wrap: flex;
   align-items: baseline;
@@ -284,7 +284,7 @@ h1 {
 }
 
 .column {
-  outline: lime solid 2px;
+  /* outline: lime solid 2px; */
   z-index: 2;
   margin: 10px;
   display: flex;
@@ -318,7 +318,7 @@ h1 {
 }
 
 .footercontainer {
-  border: #fff dashed 2px;
+  /* border: #fff dashed 2px; */
   background-color: var(--footer-color);
   color: var(--navitext-color);
   display: flex;
@@ -333,7 +333,7 @@ h1 {
   margin-bottom: 1em;
 }
 .footertitle {
-  border: #fff dashed 2px;
+  /* border: #fff dashed 2px; */
   display: flex;
   flex-wrap: wrap;
   font-size: 25px;
@@ -342,7 +342,7 @@ h1 {
 }
 
 .footerlogocontainer {
-  border: #fff dashed 2px;
+  /* border: #fff dashed 2px; */
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
@@ -356,7 +356,7 @@ h1 {
   padding: 10px;
   flex-shrink: 1;
   flex-grow: 1;
-  border: lime dashed 2px;
+  /* border: lime dashed 2px; */
   color: var(--navitext-color);
   width: 40px;
 }
