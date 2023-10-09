@@ -39,3 +39,5 @@ colorPickerForm.addEventListener("mouseout", () => {
 
 // Initially start the timer
 startTimer();
+
+
