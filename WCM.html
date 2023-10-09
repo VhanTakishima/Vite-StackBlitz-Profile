@@ -4,41 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Web Programming Journey & Profile</title>
+   <!-- NTS - Meaning Note to self wag ka malito "future-self, you got this -->
     <!-- Link -->
     <link rel="stylesheet" href="CSS/custom.css" />
     <link rel="stylesheet" href="CSS/navi.css" />
+
+    <link rel="stylesheet" id="themesheet" href="CSS/Themes/default.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- font linK -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;500;600;800&family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@300;500&family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
     <!-- Link should end here -->
     <style></style>
   </head>
   <body>
-    <div id="header">
+    <form id="colorpicker" class="colorpicker hidden" action="">
+      <fieldset> 
+      <legend class="visuallyhidden"> pick a color scheme </legend>
+       <label for="default" class="visuallyhidden">Vampire</label>
+       <input type="radio" id="default" name="theme" checked>
+    
+       <label for="blue" class="visuallyhidden">Knight</label>
+       <input type="radio" id="blue" name="theme">
+    
+       <label for="green" class="visuallyhidden">Druid</label>
+       <input type="radio" id="green" name="theme">
+    
+       <label for="orange" class="visuallyhidden">Rogue</label>
+       <input type="radio" id="orange" name="theme">
+    
+       <label for="light" class="visuallyhidden">Saint</label>
+       <input type="radio" id="light" name="theme">
+      </fieldset>
+     </form>
+     <div id="header">
       <nav>
       <section class="navi">
         <div>
+          <!-- NTS: Need gumawa ng official logo, di pwedeng ganito lang yung dalawang logo, also using this as universal HOMWE link -->
           <p class="randomletter">John</p>
         </div>
-        <!-- <img
-          class="logo"
-          src="public/LogoAnimated.gif"
-          height="15%"
-          width="15%"/> -->
           <ul class="navilist">
             <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#bodycontainer">About</a></li>
+            <li><a href="#bodycontainer">About</a></li>
+            <li id="dropdownButton"><a href="#" id="themesLink">Themes</a></li>
             <li><a href="WCM.html">Why Choose Me</a></li>
             <li><a href="#Contact">Contact</a></li>
             <li><a href="#">Admin Page</a></li>
           </ul>
-        </section>
-      </section>
-    </nav>
+      </nav>
 
 
 
@@ -66,4 +82,26 @@
     </div>
     </footer>
 </body>
+  
+  <!-- ============================Scripts========================== -->
+<!-- NTS:Text animantion script link (must need to be declared first before the file so It'll work) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Text animantion File link -->
+  <script src="textanim.js"></script>
+
+<!-- Icon script test -->
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<!-- Smooth Scroll -->
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script>
+
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 500,
+      speedAsDuration: true
+    });
+  </script>
+  <!-- logo randomletters -->
+  <script src="RandLetterAnim.js"> </script>
+  <script src="WCM.js"></script>
+  <script src="themes-selector.js"></script>
 </html>
