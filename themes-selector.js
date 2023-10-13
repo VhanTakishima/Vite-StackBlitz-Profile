@@ -39,5 +39,32 @@ colorPickerForm.addEventListener("mouseout", () => {
 
 // Initially start the timer
 startTimer();
+hideColorPicker();
 
 
+// Get all radio buttons
+const themeRadios = document.querySelectorAll('input[type="radio"][name="theme"]');
+
+// Get the image element
+const myPhoto = document.querySelector('.myphoto');
+
+// Add change event listeners to radio buttons
+themeRadios.forEach((radio) => {
+    radio.addEventListener('change', function() {
+        if (this.id === 'default') {
+            myPhoto.src = 'public/BGRHS.png';
+        } else if (this.id === 'blue') {
+            myPhoto.src = 'public/BGRHSBlue.png';
+        }
+        else if (this.id === 'green') {
+          myPhoto.src = 'public/BGRHSGreen.png';
+        }
+        else if (this.id === 'light') {
+          myPhoto.src = 'public/BGRHSBlue.png';
+        }
+        else if (this.id === 'orange') {
+          myPhoto.src = 'public/BGRHSOrange.png';
+        }
+        // Add conditions for other themes here
+    });
+});
