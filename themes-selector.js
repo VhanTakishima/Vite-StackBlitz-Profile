@@ -60,7 +60,7 @@ themeRadios.forEach((radio) => {
           myPhoto.src = 'public/BGRHSGreen.png';
         }
         else if (this.id === 'light') {
-          myPhoto.src = 'public/BGRHSBlue.png';
+          myPhoto.src = 'public/BGRHSLight.png';
         }
         else if (this.id === 'orange') {
           myPhoto.src = 'public/BGRHSOrange.png';
