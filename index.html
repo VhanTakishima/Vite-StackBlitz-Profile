@@ -16,47 +16,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@300;500&family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
-
-
     <!-- Link should end here -->
-    <style></style>
+  <style></style>
   </head>
   <body>
-  <form id="colorpicker" class="colorpicker hidden" action="">
-  <fieldset> 
-  <legend class="visuallyhidden"> pick a color scheme </legend>
-   <label for="default" class="visuallyhidden">Vampire</label>
-   <input type="radio" id="default" name="theme" checked>
-
-   <label for="blue" class="visuallyhidden">Knight</label>
-   <input type="radio" id="blue" name="theme">
-
-   <label for="green" class="visuallyhidden">Druid</label>
-   <input type="radio" id="green" name="theme">
-
-   <label for="orange" class="visuallyhidden">Rogue</label>
-   <input type="radio" id="orange" name="theme">
-
-   <label for="light" class="visuallyhidden">Saint</label>
-   <input type="radio" id="light" name="theme">
-  </fieldset>
- </form>
-    <div id="header">
-           <nav>
+    <form id="colorpicker" class="colorpicker hidden" action="">
+      <fieldset> 
+      <legend class="visuallyhidden"> pick a color scheme </legend>
+       <label for="default" class="visuallyhidden">Vampire</label>
+       <input type="radio" id="default" name="theme" checked>
+    
+       <label for="blue" class="visuallyhidden">Knight</label>
+       <input type="radio" id="blue" name="theme">
+    
+       <label for="green" class="visuallyhidden">Druid</label>
+       <input type="radio" id="green" name="theme">
+    
+       <label for="orange" class="visuallyhidden">Rogue</label>
+       <input type="radio" id="orange" name="theme">
+    
+       <label for="light" class="visuallyhidden">Saint</label>
+       <input type="radio" id="light" name="theme">
+      </fieldset>
+     </form>
+     <div id="header">
+      <nav>
       <section class="navi">
         <div>
           <!-- NTS: Need gumawa ng official logo, di pwedeng ganito lang yung dalawang logo, also using this as universal HOMWE link -->
           <p class="randomletter">John</p>
         </div>
-        <ul class="navilist">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#bodycontainer">About</a></li>
-          <li id="dropdownButton"><a href="#" id="themesLink">Themes</a></li>
-          <li><a href="WCM.html">Why Choose Me</a></li>
-          <li><a href="#Contact">Contact</a></li>
-          <li><a href="#">Admin Page</a></li>
-        </ul>
-    </nav>
+          <ul class="navilist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#bodycontainer">About</a></li>
+            <li id="dropdownButton"><a href="#" id="themesLink">Themes</a></li>
+            <li><a href="WCM.html">Why Choose Me</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#">Admin Page</a></li>
+          </ul>
+      </nav>
     <!-- <div class="dropdown">
       <div class="dropdown-content">
         <a href="#">Link 1</a>
@@ -80,8 +78,49 @@
       </div>
     </div>
     <div id="body">
+      <div class="cards-container">
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="image1.jpg" alt="Card 1">
+              <h2>Card Title 1</h2>
+              <button class="cardFlipper"><span>Learn More</span></button>
+            </div>
+            <div class="card-back">
+              <p>Some text for card 1.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="image1.jpg" alt="Card 1">
+              <h2>Card Title 1</h2>
+              <button class="cardFlipper"><span>Learn More</span></button>
+            </div>
+            <div class="card-back">
+              <p>Some text for card 1.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="image1.jpg" alt="Card 1">
+              <h2>Card Title 1</h2>
+              <button class="cardFlipper"><span>Learn More</span></button>
+            </div>
+            <div class="card-back">
+              <p>Some text for card 1.</p>
+            </div>
+          </div>
+        </div>
+        <!-- To add later -->
+      </div>
+      
+      <!-- Hidding for now creating cards for previous experience
       <div id="bodycontainer">
-        <!-- NTS: Yes , Oo Remember the name by fort minor, ayyusin mo pa lalagay, di parin ako makatulog dun sa ibang column na lumalabas pag clinick yung column na may highest height, maybe a bit of Javachipcookiescript will help -->
+        //NTS: Yes , Oo Remember the name by fort minor, ayyusin mo pa lalagay, di parin ako makatulog dun sa ibang column na lumalabas pag clinick yung column na may highest height, maybe a bit of Javachipcookiescript will help
         <section class="collapsible-section">
             <div class="column">
                 <h2 class="collapsible-header">10% Luck</h2>
@@ -108,7 +147,7 @@
           <p class="collapsible-content">  content here...</p>
       </div>
         </section>
-    </div>
+    </div> -->
   </div>
   
    <div><a href="#" class="fixedtotop btn">Go to Top</a></div> 
@@ -150,4 +189,5 @@
   <script src="RandLetterAnim.js"> </script>
   <script src="WCM.js"></script>
   <script src="themes-selector.js"></script>
+  <script src="cardButtonFlip.js"></script>
 </html>

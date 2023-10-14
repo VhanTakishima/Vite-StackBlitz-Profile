@@ -1,3 +1,5 @@
+import { cardContainer } from "./cardButtonFlip";
+
 // Function to show the color picker form
 function showColorPicker() {
   const colorPickerForm = document.getElementById("colorpicker");
@@ -67,4 +69,11 @@ themeRadios.forEach((radio) => {
         }
         // Add conditions for other themes here
     });
+});cardContainer.addEventListener("click", (clickToFlip) => {
+
+    if (clickToFlip.target.classList.contains(".cardFlipper")) {
+        const cardInner = clickToFlip.target.closest(".card").querySelector(".card-inner");
+        cardInner.style.transform = "rotateY(180deg)";
+    }
 });
+
