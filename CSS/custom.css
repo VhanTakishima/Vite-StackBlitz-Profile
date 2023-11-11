@@ -1,4 +1,13 @@
-@import url(./_resets.scss);
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* fonts */
 @font-face {
   font-family: SGrapes;

@@ -1,4 +1,13 @@
-@import url(./_resets.scss);
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* fonts */
 @font-face {
   font-family: SGrapes;
@@ -114,7 +123,7 @@
   bottom: -6px;
   transition: 0.3s;
 }
-.navilist .navilist a:hover::after {
+.navilist a:hover::after {
   width: 100%;
 }
 
@@ -204,7 +213,6 @@ input[type=radio]#light {
   --navilisteffect-color: #FF3535;
   --columnhovereffect-color:#ffe9e9;
   --columntext-color:black;
-  --image-source: "public/BGRHS.png";
 }
 
 :root:has(#blue:checked) {
@@ -220,11 +228,10 @@ input[type=radio]#light {
   --navilisteffect-color: #000061;
   --columnhovereffect-color:#ffe9e9;
   --columntext-color:black;
-  --image-source: "public/BGRHSBlue.png";
 }
 
 :root:has(#green:checked) {
-  --primarybackground-color: rgb(175, 255, 175);
+  --primarybackground-color:#afffaf;
   --secondarybackground-color:rgb(155, 255, 155);
   --primarytext-color: black;
   --highlighttext-color: lime;
@@ -236,7 +243,6 @@ input[type=radio]#light {
   --navilisteffect-color: #014612;
   --columnhovereffect-color:#ffe9e9;
   --columntext-color:black;
-  --image-source: "public/BGRHSGreen.png";
 }
 
 :root:has(#light:checked) {
@@ -252,11 +258,10 @@ input[type=radio]#light {
   --navilisteffect-color: rgb(99, 97, 0);
   --columnhovereffect-color:#ffe9e9;
   --columntext-color:black;
-  --image-source: "public/BGRHSLight.png";
 }
 
 :root:has(#orange:checked) {
-  --primarybackground-color:rgb(241, 159, 52);
+  --primarybackground-color:#f19f34;
   --secondarybackground-color:#A7A7FF;
   --primarytext-color:white;
   --highlighttext-color:rgb(255, 72, 0);
@@ -268,7 +273,6 @@ input[type=radio]#light {
   --navilisteffect-color: rgb(180, 16, 4);
   --columnhovereffect-color:#ffe9e9;
   --columntext-color:black;
-  --image-source: "public/BGRHSOrange.png";
 }
 
 /* eto yung default pag landscape or mas mataas na yung width screen  */
