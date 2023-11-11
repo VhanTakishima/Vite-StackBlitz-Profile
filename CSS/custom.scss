@@ -1,0 +1,418 @@
+
+@import url(./_resets.scss);
+  
+  /* fonts */
+  @font-face {
+    font-family: SGrapes;
+    src: url(../Fonts/SundayGrapes.ttf);
+  }
+  @font-face {
+    font-family: BOO;
+    src: url(../Fonts/BlackOpsOne.ttf);
+  }
+  @font-face {
+    font-family: Npool;
+    src: url(../Fonts/Neuropool.otf);
+  }
+  @font-face {
+    font-family: AngasV3B;
+    src: url(../Fonts/AngasV3Bold.ttf);
+  }
+  @font-face {
+    font-family: AngasV3U;
+    src: url(../Fonts/AngasV3Ultra.ttf);
+  }
+  @font-face {
+    font-family: Vampire;
+    src: url(../Fonts/Vampire.ttf);
+  }
+  @font-face {
+    font-family: TBold;
+    src: url(../Fonts/Thunderbold.ttf);
+  }
+  @font-face {
+    font-family: Gow;
+    src: url(../Fonts/GoW.TTF);
+  }
+  @font-face {
+    font-family: Dosis;
+    src: url(../Fonts/Dosis.ttf);
+  }
+  
+  /* fonts ends here */
+  
+  #header {
+    margin: auto 0px;
+    width: 100%;
+    height: auto;
+    background-image: url('https://www.transparenttextures.com/patterns/dark-exa.png');
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  }
+  #body {
+    background-size: cover;
+    margin: auto;
+  }
+  
+  h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 5px;
+    word-spacing: 1px;
+  }
+  
+  /* Classes */
+  
+  .headercontainer {
+    /* border: lime solid 2px; */
+    background-color: var(--primarybackground-color);
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .headertext {
+    /* border: lime dashed 3px; */
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
+    min-width: 55%;
+    justify-content: space-evenly;
+    /* background-image:url("public/BG02F.png");
+    background-size: cover;
+    background-position:center; */
+  }
+  .headertext > * {
+    margin: 20px;
+  }
+  .headertext p {
+    align-items: left;
+    /* border: #fff dashed 3px; */
+    color:var(--primarytext-color);
+    font-family: Npool;
+    font-size: 25px;
+    justify-content: left;
+  }
+  .headertext h1 {
+    /* border: #fff dashed 3px; */
+    color:var(--primarytext-color);
+    font-family: Npool;
+    font-size: 35px;
+    letter-spacing: 5px;
+  }
+  .headertext h1 span {
+    color: var(--highlighttext-color);
+    text-transform: uppercase;
+    font-family: Gow;
+    font-size: 60px;
+  }
+  
+  .headertext p span {
+    color:var(--highlighttext-color);
+    font-family: AngasV3B;
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+  .headertext .Marshal {
+    font-size: 12px;
+  }
+  .myphoto {
+    src:var(--image-source);
+    /* border: lime solid 2px; */
+    object-position: center;
+    object-fit: cover;
+    display: flex;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    width: 36%;
+    height: 475px;
+    margin: 10px 20px 10px 0px;
+    align-items: center;
+  }
+  /* eto yung default pag portrait or mas mataas na yung width screen  */
+  @media (width < 790px) {
+    .headercontainer {
+      flex-direction: column-reverse;
+    }
+    .myphoto {
+      object-position: center;
+      object-fit: cover;
+      width: 100%;
+      height: 150px;
+      aspect-ratio: 5/1;
+    }
+    .headertext {
+      margin: 0px;
+      align-items: center;
+      justify-content: center;
+    }
+    .headertext > * {
+      margin: 10px;
+    }
+    .headertext p {
+      font-size: 25px;
+      min-height: 10rem;
+    }
+    .headertext {
+      align-items: left;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .adminDD {
+      margin-bottom: 30px;
+    }
+    .column {
+      min-width: 20%;
+    }
+    .collapsible-section {
+      overflow-x: scroll;
+    }
+    .collapsible-header {
+      font-size: 12px;
+    }
+    .collapsible-content {
+      font-size: 10px;
+    }
+    .footertitle {
+      text-align: center;
+      text-justify: newspaper;
+    }
+  }
+  .HeaderButton {
+    background-color: var(--highlighttext-color);
+    color: var(--primarytext-color);
+    border-radius: 10px;
+    margin: 10em 10px;
+    padding: 10px 15px;
+    border-color: transparent;
+    max-width: 10%;
+    height: 30px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .HeaderButton:hover {
+    background-color: darkgray;
+    color: #000000;
+    cursor: pointer;
+  }
+  
+  .box1 {
+    background-color: pink;
+    border-color: blue;
+    max-width: 100%;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 15px;
+    text-align: center;
+  }
+  
+  .box1 li {
+    display: inline;
+    list-style: none;
+  }
+  .box1 p {
+    font-style: italic;
+  }
+  
+  /* will be fixing for portrait mode */
+  .btn {
+    border-radius: 10px;
+    margin: 10px 10px;
+    padding: 10px 15px;
+    border-color: transparent;
+    color: var(--button-font-color);
+    max-width: 10%;
+    width: 100px;
+    height: 20px;
+  }
+  
+  /* will be fixing for portrait mode */
+  .fixedtotop {
+    background-color: var(--highlighttext-color);
+    position: fixed;
+    top: 505px;
+    left: 88%;
+    text-align: center;
+    text-decoration: none;
+    z-index: 5;
+  }
+  
+  .fixedtotop:hover {
+    background-color: white;
+    color: #000000;
+  }
+  
+  #bodycontainer {
+    background-color: var(--primarybackground-color);
+    background-image: url('https://www.transparenttextures.com/patterns/dark-exa.png');
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .collapsible-section {
+    /* outline: 5px dashed lime; */
+    display: flex;
+    flex-wrap: flex;
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: left;
+    width: 100%;
+  }
+  
+  .collapsible-header {
+    background: var(--button-gradient);
+    color: var(--button-font-color);
+    min-width: 10vw;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px 5px 0 0; /* Add border-radius only to top corners */
+  }
+  
+  .column {
+    /* outline: lime solid 2px; */
+    z-index: 2;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    background-color:var(--secondarybackground-color);
+    color: var(--columntext-color);
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+    flex-grow: 0;
+    min-height: 1rem;
+    justify-content: flex-start; /* Align content at the top */
+    transition: background 0.3s ease;
+  }
+  
+  .column:hover {
+    background: var(--columnhovereffect-color);
+    opacity: 1;
+  }
+  
+  .collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .collapsible-section.expanded .collapsible-content {
+    max-height: 20px; /* Adjust as needed */
+    opacity: 1;
+  }
+  
+  /* card CCS Starts here  */
+  .cards-container {
+    outline: 1px lime solid;
+    display:flex;
+    justify-content:space-evenly; 
+    align-items: baseline;
+    height: 400px;
+    max-height:400px;
+    padding:50px;
+  }
+  
+  .card {
+    perspective: 1000px;
+    width: 300px;
+    height: 100%;
+    max-height: 350px;
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    
+  }
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+  
+  }
+  .card-front,
+  .card-back {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  
+  }
+  
+  .card-front {
+    background-color: var(--secondarybackground-color);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .card-front >*{
+  margin-top:20px
+  
+  }
+  
+  .card-back {
+    background-color:var(--footer-color);
+    color: var(--button-font-color);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    transform: rotateY(180deg);
+  
+  }
+  /* CArds CCS Ends here  */
+  
+  .footercontainer {
+    /* border: #fff dashed 2px; */
+    background-color: var(--footer-color);
+    color: var(--navitext-color);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .footercontainer p {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: #fff;
+    margin-bottom: 1em;
+  }
+  .footertitle {
+    /* border: #fff dashed 2px; */
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+    justify-content: center;
+    letter-spacing: 5px;
+  }
+  
+  .footerlogocontainer {
+    /* border: #fff dashed 2px; */
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: space-between;
+    justify-content: center;
+  }
+  .footerlogocontainer a svg {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    /* border: lime dashed 2px; */
+    color: var(--navitext-color);
+    width: 40px;
+  }
+  .footerlogocontainer a svg:hover {
+    filter: drop-shadow(0 0 10px rgb(82, 0, 0));
+  }
+  
