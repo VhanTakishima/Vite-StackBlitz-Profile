@@ -1,6 +1,7 @@
 # Vite-StackBlitz-Profile
 Consider this as my training grounds
 
+---2023--
 
 9/18 ADDED WHITE BORDER SO i CAN SEE THE MARGINS AND PADDINGS TEMPORARILY
 9/30 Planning to add Themes and done with optimizing some codes
@@ -12,3 +13,6 @@ Consider this as my training grounds
 Future task-- adding default color scheme and saving last selected color scheme using local storage key and value.
 
 10/9 getting in depth with Git and Github commands -- I was used to stackblitz with so much automatic straight commit and push funtionality -- I need to standarize my process that's why I'm getting the basics of GitHub and Git -- so far I encounters so minimal errors on the precess, which is good 
+
+
+11/11 i've been trying sass for these past few days after ther brgy. election, my script for themes and animation on navilst is not working now. up until this point I can't diagnose what was the problem. maybe when im saving my scss? or maybe because continious yung pag modify ni sass sa css? IM STRESSED OUT ilang araw na  to pero di ko padin ma fix. If you're reading this help me
