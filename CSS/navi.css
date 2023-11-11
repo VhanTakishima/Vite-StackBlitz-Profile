@@ -1,12 +1,4 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-}
-html {
-  scroll-behavior: smooth;
-}
-
+@import url(./_resets.scss);
 /* fonts */
 @font-face {
   font-family: SGrapes;
@@ -44,9 +36,7 @@ html {
   font-family: Dosis;
   src: url(../Fonts/Dosis.ttf);
 }
-
 /* fonts ends here */
-
 /* raplacing Logo to match natural element */
 .randomletter {
   font-family: AngasV3B;
@@ -56,10 +46,12 @@ html {
   margin-left: 20px;
   border-radius: 5px;
 }
+
 .randomletter:hover {
   background-color: white;
   color: black;
 }
+
 .navi {
   background-color: var(--navibg-color);
   /* border: #fff dashed 3px; */
@@ -70,6 +62,7 @@ html {
   max-width: 100%;
   justify-content: space-between;
 }
+
 /* .logo {
   border: lime solid 2px;
   display: flex;
@@ -84,6 +77,7 @@ html {
   margin-top: 10px;
   text-align: center;
 }
+
 .navilist {
   flex-direction: row;
   /* border: #fff dashed 3px; */
@@ -94,26 +88,24 @@ html {
   align-items: center;
   gap: 1em;
   text-align: center;
+  /* .navilist li {
+      border: #fff dashed 3px;
+  } */
 }
-
 .navilist > * {
   margin: 3px;
 }
-/* .navilist li {
-  border: #fff dashed 3px;
-} */
 .navilist a {
   color: var(--navitext-color);
   text-decoration: none;
   position: relative;
   font-size: 20px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   text-align: center;
 }
-
 .navilist a::after {
-  content: ' ';
+  content: " ";
   width: 0%;
   height: 3px;
   position: absolute;
@@ -122,16 +114,15 @@ html {
   bottom: -6px;
   transition: 0.3s;
 }
-
-.navilist a:hover::after {
+.navilist .navilist a:hover::after {
   width: 100%;
 }
 
 /* for dropdown picker */
-
 .visuallyhidden {
   clip: rect(0 0 0 0);
-  clip-path: inset(50%);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -143,7 +134,6 @@ html {
   display: flex;
   flex: wrap;
   position: absolute;
-
   width: 100%;
 }
 .colorpicker .visible {
@@ -151,48 +141,53 @@ html {
   transition: opacity 0.9s ease-in-out; /* Add a transition for opacity */
   z-index: 10;
 }
-
 .colorpicker .hidden {
   opacity: 0;
   display: none;
   z-index: -1;
 }
-
 .colorpicker > fieldset {
   border: 0;
   display: flex;
   gap: 2rem;
   background-color: var(--primarybackground-color);
+  width: -moz-fit-content;
   width: fit-content;
   padding: 1rem 3rem;
   margin-inline: auto;
   border-radius: 0 0 1rem 1rem;
 }
-.colorpicker input[type='radio'] {
-  appearance: none;
+.colorpicker input[type=radio] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   width: 1rem;
   height: 1rem;
   outline: 2px solid var(--radio-color, currentColor);
   outline-offset: 3px;
   border-radius: 50%;
 }
-.colorpicker input[type='radio']:checked {
+.colorpicker input[type=radio]:checked {
   background-color: var(--radio-color);
 }
 
-input[type='radio']#default {
+input[type=radio]#default {
   --radio-color: red;
 }
-input[type='radio']#blue {
+
+input[type=radio]#blue {
   --radio-color: blue;
 }
-input[type='radio']#green {
+
+input[type=radio]#green {
   --radio-color: green;
 }
-input[type='radio']#orange {
+
+input[type=radio]#orange {
   --radio-color: orange;
 }
-input[type='radio']#light {
+
+input[type=radio]#light {
   --radio-color: gold;
 }
 
@@ -202,7 +197,7 @@ input[type='radio']#light {
   --primarytext-color: #fff;
   --highlighttext-color: #C50000;
   --button-gradient: linear-gradient(180deg, rgb(255, 51, 51), rgb(107, 9, 9));
-  --button-font-color: #fff; 
+  --button-font-color: #fff;
   --navibg-color: #9A0000;
   --navitext-color:#fff;
   --footer-color: #9A0000;
@@ -211,6 +206,7 @@ input[type='radio']#light {
   --columntext-color:black;
   --image-source: "public/BGRHS.png";
 }
+
 :root:has(#blue:checked) {
   --primarybackground-color:#E2E2E3;
   --secondarybackground-color:#A7A7FF;
@@ -224,8 +220,9 @@ input[type='radio']#light {
   --navilisteffect-color: #000061;
   --columnhovereffect-color:#ffe9e9;
   --columntext-color:black;
-  --image-source: "public/BGRHS.png";
+  --image-source: "public/BGRHSBlue.png";
 }
+
 :root:has(#green:checked) {
   --primarybackground-color: rgb(175, 255, 175);
   --secondarybackground-color:rgb(155, 255, 155);
@@ -239,8 +236,9 @@ input[type='radio']#light {
   --navilisteffect-color: #014612;
   --columnhovereffect-color:#ffe9e9;
   --columntext-color:black;
-  --image-source: "public/BGRHS.png";
+  --image-source: "public/BGRHSGreen.png";
 }
+
 :root:has(#light:checked) {
   --primarybackground-color: white;
   --secondarybackground-color:#A7A7FF;
@@ -250,12 +248,13 @@ input[type='radio']#light {
   --button-font-color: #fff;
   --navibg-color: rgb(255, 251, 0);
   --navitext-color: rgb(99, 97, 0);
-  --footer-color:  rgb(255, 251, 0);
-  --navilisteffect-color:  rgb(99, 97, 0);
+  --footer-color: rgb(255, 251, 0);
+  --navilisteffect-color: rgb(99, 97, 0);
   --columnhovereffect-color:#ffe9e9;
   --columntext-color:black;
-  --image-source: "public/BGRHS.png";
+  --image-source: "public/BGRHSLight.png";
 }
+
 :root:has(#orange:checked) {
   --primarybackground-color:rgb(241, 159, 52);
   --secondarybackground-color:#A7A7FF;
@@ -269,9 +268,8 @@ input[type='radio']#light {
   --navilisteffect-color: rgb(180, 16, 4);
   --columnhovereffect-color:#ffe9e9;
   --columntext-color:black;
-  --image-source: "public/BGRHS.png";
+  --image-source: "public/BGRHSOrange.png";
 }
-
 
 /* eto yung default pag landscape or mas mataas na yung width screen  */
 @media (width < 790px) {
@@ -304,4 +302,4 @@ input[type='radio']#light {
   .navilist a {
     font-size: 10pt;
   }
-}
+}/*# sourceMappingURL=navi.css.map */

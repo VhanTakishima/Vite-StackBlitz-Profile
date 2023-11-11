@@ -367,6 +367,8 @@
     transform: rotateY(180deg);
   
   }
+
+
   /* CArds CCS Ends here  */
   
   .footercontainer {
@@ -376,13 +378,13 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-  }
-  .footercontainer p {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    color: #fff;
-    margin-bottom: 1em;
+  
+    & p {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        color: #fff;
+        margin-bottom: 1em;}
   }
   .footertitle {
     /* border: #fff dashed 2px; */
