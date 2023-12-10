@@ -1,4 +1,4 @@
-import { cardContainer } from "./cardButtonFlip";
+import {cardContainer} from "./cardButtonFlip";
 
 // Function to show the color picker form
 function showColorPicker() {
