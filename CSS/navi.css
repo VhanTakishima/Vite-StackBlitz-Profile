@@ -140,6 +140,26 @@ html {
   width: 1px;
 }
 
+#Red {
+  display: none;
+}
+
+#Blue {
+  display: none;
+}
+
+#Green {
+  display: none;
+}
+
+#Light {
+  display: none;
+}
+
+#Orange {
+  display: none;
+}
+
 .colorpicker {
   display: flex;
   flex: wrap;
@@ -215,6 +235,9 @@ input[type=radio]#light {
   --columnhovereffect-color:#ffe9e9;
   --columntext-color:black;
 }
+:root:has(#default:checked) #Red {
+  display: flex;
+}
 
 :root:has(#blue:checked) {
   --primarybackground-color:#E2E2E3;
@@ -229,6 +252,9 @@ input[type=radio]#light {
   --navilisteffect-color: #000061;
   --columnhovereffect-color:#ffe9e9;
   --columntext-color:black;
+}
+:root:has(#blue:checked) #Blue {
+  display: flex;
 }
 
 :root:has(#green:checked) {
@@ -245,6 +271,9 @@ input[type=radio]#light {
   --columnhovereffect-color:#ffe9e9;
   --columntext-color:black;
 }
+:root:has(#green:checked) #Green {
+  display: flex;
+}
 
 :root:has(#light:checked) {
   --primarybackground-color: white;
@@ -260,6 +289,9 @@ input[type=radio]#light {
   --columnhovereffect-color:#ffe9e9;
   --columntext-color:black;
 }
+:root:has(#light:checked) #Light {
+  display: flex;
+}
 
 :root:has(#orange:checked) {
   --primarybackground-color:#f19f34;
@@ -274,6 +306,9 @@ input[type=radio]#light {
   --navilisteffect-color: rgb(180, 16, 4);
   --columnhovereffect-color:#ffe9e9;
   --columntext-color:black;
+}
+:root:has(#orange:checked) #Orange {
+  display: flex;
 }
 
 /* eto yung default pag landscape or mas mataas na yung width screen  */

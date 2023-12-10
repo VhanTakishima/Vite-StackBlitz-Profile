@@ -132,7 +132,8 @@
     height: 475px;
     margin: 10px 20px 10px 0px;
     align-items: center;
-  }
+    }
+  
   /* eto yung default pag portrait or mas mataas na yung width screen  */
   @media (width < 790px) {
     .headercontainer {

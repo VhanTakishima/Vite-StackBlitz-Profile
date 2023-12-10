@@ -43,7 +43,6 @@ colorPickerForm.addEventListener("mouseout", () => {
 startTimer();
 hideColorPicker();
 
-
 // Get all radio buttons
 const themeRadios = document.querySelectorAll('input[type="radio"][name="theme"]');
 
@@ -69,11 +68,13 @@ themeRadios.forEach((radio) => {
         }
         // Add conditions for other themes here
     });
-});cardContainer.addEventListener("click", (clickToFlip) => {
-
-    if (clickToFlip.target.classList.contains(".cardFlipper")) {
-        const cardInner = clickToFlip.target.closest(".card").querySelector(".card-inner");
-        cardInner.style.transform = "rotateY(180deg)";
-    }
 });
+
+// cardContainer.addEventListener("click", (clickToFlip) => {
+
+//     if (clickToFlip.target.classList.contains(".cardFlipper")) {
+//         const cardInner = clickToFlip.target.closest(".card").querySelector(".card-inner");
+//         cardInner.style.transform = "rotateY(180deg)";
+//     }
+// });
 

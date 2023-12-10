@@ -134,7 +134,22 @@
     white-space: nowrap;
     width: 1px;
   }
-  
+    #Red {
+    display: none;
+    }
+    #Blue {
+    display: none;
+    }
+    #Green {
+    display: none;
+    }
+    #Light {
+    display: none;
+    }
+    #Orange {
+      display: none;
+      }
+
   .colorpicker {
     display: flex;
     flex: wrap;
@@ -205,6 +220,10 @@
     --navilisteffect-color: #FF3535;
     --columnhovereffect-color:#ffe9e9;
     --columntext-color:black;
+
+    #Red{
+      display: flex;
+    }
   }
   :root:has(#blue:checked) {
     --primarybackground-color:#E2E2E3;
@@ -219,6 +238,9 @@
     --navilisteffect-color: #000061;
     --columnhovereffect-color:#ffe9e9;
     --columntext-color:black;
+    #Blue{
+      display: flex;
+    }
 
   }
   :root:has(#green:checked) {
@@ -234,6 +256,9 @@
     --navilisteffect-color: #014612;
     --columnhovereffect-color:#ffe9e9;
     --columntext-color:black;
+    #Green{
+      display: flex;
+    }
   }
   :root:has(#light:checked) {
     --primarybackground-color: white;
@@ -248,6 +273,9 @@
     --navilisteffect-color:  rgb(99, 97, 0);
     --columnhovereffect-color:#ffe9e9;
     --columntext-color:black;
+    #Light{
+      display: flex;
+    }
   }
   :root:has(#orange:checked) {
     --primarybackground-color:#f19f34;
@@ -262,6 +290,9 @@
     --navilisteffect-color: rgb(180, 16, 4);
     --columnhovereffect-color:#ffe9e9;
     --columntext-color:black;
+    #Orange{
+      display: flex;
+    }
   }
   
   
