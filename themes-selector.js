@@ -1,15 +1,20 @@
-import {cardContainer} from "./cardButtonFlip";
+
 
 // Function to show the color picker form
 function showColorPicker() {
-  const colorPickerForm = document.getElementById("colorpicker");
-  colorPickerForm.style.opacity = "1";
+  const colorPicker = document.querySelector('.colorpicker');
+  colorPicker.style.display = "flex";
+  colorPicker.style.transform = 'translateY(5%)';
+  colorPicker.classList.remove('hidden');
+  colorPicker.classList.add('visible');
 }
 
 // Function to hide the color picker form
 function hideColorPicker() {
-  const colorPickerForm = document.getElementById("colorpicker");
-  colorPickerForm.style.opacity = "0";
+  const colorPicker = document.querySelector('.colorpicker');
+  colorPicker.style.transform = 'translateY(-100%)';
+  colorPicker.classList.remove('visible');
+  colorPicker.classList.add('hidden');
 }
 
 // Event listener for the "Themes" link to show the color picker form
@@ -17,6 +22,8 @@ const themesLink = document.getElementById("themesLink");
 themesLink.addEventListener("click", function (event) {
   event.preventDefault(); // Prevent the default link behavior
   showColorPicker(); // Show the color picker form
+  clearTimeout(timer); // Clear the timer
+  startTimer(); // Restart the timer on mouseout
 });
 
 // Timer to hide the color picker form after 10 seconds of inactivity
@@ -26,16 +33,16 @@ let timer; // Declare a timer variable
 function startTimer() {
   timer = setTimeout(() => {
     hideColorPicker(); // Hide the color picker form
-  }, 1000); // 1 seconds (1000 milliseconds)
+  }, 3000); // 1 seconds (1000 milliseconds)
 }
 
 // Event listeners to reset the timer on user interaction
-const colorPickerForm = document.getElementById("colorpicker");
-colorPickerForm.addEventListener("mouseover", () => {
+const colorPicker = document.querySelector('.colorpicker');
+colorPicker.addEventListener("mouseover", () => {
   clearTimeout(timer); // Clear the timer
 });
 
-colorPickerForm.addEventListener("mouseout", () => {
+colorPicker.addEventListener("mouseout", () => {
   startTimer(); // Restart the timer on mouseout
 });
 
@@ -50,25 +57,25 @@ const themeRadios = document.querySelectorAll('input[type="radio"][name="theme"]
 const myPhoto = document.querySelector('.myphoto');
 
 // Add change event listeners to radio buttons
-themeRadios.forEach((radio) => {
-    radio.addEventListener('change', function() {
-        if (this.id === 'default') {
-            myPhoto.src = 'public/BGRHS.png';
-        } else if (this.id === 'blue') {
-            myPhoto.src = 'public/BGRHSBlue.png';
-        }
-        else if (this.id === 'green') {
-          myPhoto.src = 'public/BGRHSGreen.png';
-        }
-        else if (this.id === 'light') {
-          myPhoto.src = 'public/BGRHSLight.png';
-        }
-        else if (this.id === 'orange') {
-          myPhoto.src = 'public/BGRHSOrange.png';
-        }
+// themeRadios.forEach((radio) => {
+//     radio.addEventListener('change', function() {
+//         if (this.id === 'default') {
+//             myPhoto.src = 'public/BGRHS.png';
+//         } else if (this.id === 'blue') {
+//             myPhoto.src = 'public/BGRHSBlue.png';
+//         }
+//         else if (this.id === 'green') {
+//           myPhoto.src = 'public/BGRHSGreen.png';
+//         }
+//         else if (this.id === 'light') {
+//           myPhoto.src = 'public/BGRHSLight.png';
+//         }
+//         else if (this.id === 'orange') {
+//           myPhoto.src = 'public/BGRHSOrange.png';
+//         }
         // Add conditions for other themes here
-    });
-});
+//     });
+// });
 
 // cardContainer.addEventListener("click", (clickToFlip) => {
 

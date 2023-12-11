@@ -64,7 +64,7 @@
     width: 100%;
     z-index: 1;
     max-width: 100%;
-    padding-top: 35px;
+    padding-top: 25px;
     justify-content: space-between;
   }
   /* .logo {
@@ -154,19 +154,18 @@
     display: flex;
     flex: wrap;
     position: absolute;
-  
     width: 100%;
+    transition: opacity 0.9s ease-in-out, transform 0.9s ease-in-out;
 
     & .visible {
         opacity: 1; /* Initially, set the opacity to 0 */
-        transition: opacity 0.9s ease-in-out; /* Add a transition for opacity */
-        z-index: 10;
+        display:flex;
     }
     
     & .hidden {
         opacity: 0;
+        transform: translateY(-5%);
         display: none;
-        z-index: -1;
     }
     
     & > fieldset {
@@ -295,7 +294,7 @@
     }
   }
   
-  
+ 
   /* eto yung default pag landscape or mas mataas na yung width screen  */
   @media (width < 790px) {
     .logo {
@@ -328,4 +327,5 @@
       font-size: 10pt;
     }
   }
+
   
