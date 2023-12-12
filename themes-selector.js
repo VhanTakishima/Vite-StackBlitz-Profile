@@ -56,32 +56,23 @@ const themeRadios = document.querySelectorAll('input[type="radio"][name="theme"]
 // Get the image element
 const myPhoto = document.querySelector('.myphoto');
 
-// Add change event listeners to radio buttons
-// themeRadios.forEach((radio) => {
-//     radio.addEventListener('change', function() {
-//         if (this.id === 'default') {
-//             myPhoto.src = 'public/BGRHS.png';
-//         } else if (this.id === 'blue') {
-//             myPhoto.src = 'public/BGRHSBlue.png';
-//         }
-//         else if (this.id === 'green') {
-//           myPhoto.src = 'public/BGRHSGreen.png';
-//         }
-//         else if (this.id === 'light') {
-//           myPhoto.src = 'public/BGRHSLight.png';
-//         }
-//         else if (this.id === 'orange') {
-//           myPhoto.src = 'public/BGRHSOrange.png';
-//         }
-        // Add conditions for other themes here
-//     });
-// });
+const colorThemes  = document.querySelectorAll('[name="theme"]')
+//writing in localStorage
+const writeTheme =function(theme){
+ localStorage.setItem("activatedTheme",theme)};
+//getting theme from localStorage when page reloads
+ const getTheme = function(){
+  const lastSavedTheme = localStorage.getItem("activatedTheme");
+  colorThemes.forEach((themeOption) => {
+    if (themeOption.id === lastSavedTheme){
+      themeOption.checked = true;
+    }
+  });
+  };
+//eventlistener
+colorThemes.forEach(themeOption => {
+themeOption.addEventListener("click",() =>
+{writeTheme(themeOption.id)})
+});
 
-// cardContainer.addEventListener("click", (clickToFlip) => {
-
-//     if (clickToFlip.target.classList.contains(".cardFlipper")) {
-//         const cardInner = clickToFlip.target.closest(".card").querySelector(".card-inner");
-//         cardInner.style.transform = "rotateY(180deg)";
-//     }
-// });
-
+document.onload = getTheme();

@@ -1,0 +1,68 @@
+@font-face {
+    font-family: TBold;
+    src: url(../Fonts/Thunderbold.ttf);
+  }
+
+
+.calcContainer{
+display: flex;
+align-items: center;
+justify-content: center;
+width: auto;
+outline: lime 3px solid;
+padding: 20px;
+
+.calcDesc{
+margin-right: 30px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+span{
+font-family: TBold;
+color:var(--highlighttext-color);
+}
+}
+
+
+
+.calc{
+outline: lime 3px solid;
+background: var(--highlighttext-color);
+padding: 20px;
+border-radius: 10px;
+    form input{
+      outline: 0px;
+      width: 60px;
+      height: 60px;
+      border-radius: 10px;
+      background: transparent;
+      font-size: 25px; 
+        cursor:pointer;
+    }
+    
+    #calcequal{
+        width:125px;
+   }
+
+}   
+
+}
+form .calcdisplay{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+    background:var(--columnhovereffect-color);
+    border-radius: 10px;
+    input{
+        text-align: right;
+        flex:1;
+        font-size: 30px;
+        box-shadow:none;
+        }
+}
+.calcbutt{
+    color:var( --navitext-color);
+    box-shadow:var(--columnhovereffect-color);
+    margin:2px 0px;
+   }

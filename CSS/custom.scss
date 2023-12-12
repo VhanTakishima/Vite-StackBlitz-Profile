@@ -351,6 +351,9 @@
   
   .card-front {
     background-color: var(--secondarybackground-color);
+
+    // background: transparent;
+    // backdrop-filter: blur(10px);
     border: 1px solid #ddd;
     border-radius: 10px;
     text-align: center;

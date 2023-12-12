@@ -17,3 +17,5 @@ Future task-- adding default color scheme and saving last selected color scheme 
 11/11 i've been trying sass for these past few days after ther brgy. election, my script for themes and animation on navilst is not working now. up until this point I can't diagnose what was the problem. maybe when im saving my scss? or maybe because continious yung pag modify ni sass sa css? IM STRESSED OUT ilang araw na  to pero di ko padin ma fix. If you're reading this help me
 
 12/12 After sometime and some push of my friends, I finally get back to my battle station. Also fixed theme selector. after doing some research for 1 and a half day. Kaya naman palang pag haluin ang SCSS at JS. planning to add a page for my codepen.io creations.
+
+12/13 INTRODUCING CAlculaTHOR.  Made in one sitting. also Fixed Theme selector. It can now reemember last picked theme, even if you reload the page. thanks to LocalStorage.
