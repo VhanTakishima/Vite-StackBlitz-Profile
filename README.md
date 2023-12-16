@@ -19,3 +19,10 @@ Future task-- adding default color scheme and saving last selected color scheme 
 12/12 After sometime and some push of my friends, I finally get back to my battle station. Also fixed theme selector. after doing some research for 1 and a half day. Kaya naman palang pag haluin ang SCSS at JS. planning to add a page for my codepen.io creations.
 
 12/13 INTRODUCING CAlculaTHOR.  Made in one sitting. also Fixed Theme selector. It can now reemember last picked theme, even if you reload the page. thanks to LocalStorage.
+
+12/17 - Added contact in footer some functionality
+- Can now copy link to clipboard
+- added LinkedIn profile
+- Can now go to link in the new tab
+
+ button's design to be updated tommorow

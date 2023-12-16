@@ -392,6 +392,9 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
 }
 .footercontainer p {
   display: flex;
@@ -420,7 +423,20 @@ h1 {
   justify-content: center;
 }
 
-.footerlogocontainer a svg {
+.footerlogocontainer a svg:hover {
+  filter: drop-shadow(0 0 10px rgb(82, 0, 0));
+}
+
+.footercontainer button {
+  color: var(--navitext-color);
+  background: transparent;
+  width: 40px;
+  border: none;
+  box-shadow: none;
+  border-radius: 10px;
+  margin: 10px;
+}
+.footercontainer button svg {
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
@@ -430,7 +446,41 @@ h1 {
   color: var(--navitext-color);
   width: 40px;
 }
-
-.footerlogocontainer a svg:hover {
+.footercontainer button :hover {
+  border-radius: 20px;
+  background: transparent;
+  cursor: pointer;
   filter: drop-shadow(0 0 10px rgb(82, 0, 0));
+  box-shadow: none;
+}
+
+.parafootercontainer {
+  width: 100%;
+}
+
+.footerfloater {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputContainer {
+  width: 100%;
+  display: none;
+  padding: 10px;
+  justify-content: center;
+}
+.inputContainer input {
+  margin-right: 10px;
+}
+.inputContainer p {
+  padding-right: 30px;
+  margin: 0;
+  display: none;
+}
+
+.linkClipboard {
+  width: 300px;
+  text-align: center;
 }/*# sourceMappingURL=custom.css.map */

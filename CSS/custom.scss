@@ -383,13 +383,15 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-  
+  align-items: center;
+  justify-content: center;
     & p {
         display: flex;
         align-content: center;
         justify-content: center;
         color: #fff;
         margin-bottom: 1em;}
+        padding-bottom:10px;
   }
   .footertitle {
     /* border: #fff dashed 2px; */
@@ -408,18 +410,72 @@
     flex-direction: row;
     align-items: space-between;
     justify-content: center;
+
   }
-  .footerlogocontainer a svg {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    flex-shrink: 1;
-    flex-grow: 1;
-    /* border: lime dashed 2px; */
-    color: var(--navitext-color);
-    width: 40px;
-  }
+  // .footerlogocontainer a svg {
+
+  // }
   .footerlogocontainer a svg:hover {
     filter: drop-shadow(0 0 10px rgb(82, 0, 0));
   }
-  
+  .footercontainer button{
+    color: var(--navitext-color);
+    background:transparent;
+    width: 40px;
+    border:none;
+    box-shadow:none;
+    border-radius: 10px;
+    margin:10px;
+
+    svg{
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10px;
+      flex-shrink: 1;
+      flex-grow: 1;
+      /* border: lime dashed 2px; */
+      color: var(--navitext-color);
+      width: 40px;
+    }
+    :hover{
+      border-radius: 20px;
+      background:transparent;
+      cursor: pointer;
+      filter: drop-shadow(0 0 10px rgb(82, 0, 0));
+      box-shadow: none;
+    }
+
+  }
+
+
+  .parafootercontainer{
+    width: 100%;
+    // border: lime 1px solid;
+  }
+  .footerfloater{
+    // border: lime 1px solid;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .inputContainer{
+    // border: yellow 1px solid;
+    width: 100%;
+    display:none;
+    padding: 10px;
+    justify-content: center;
+    input{
+      margin-right: 10px;
+    }
+    p{
+      padding-right: 30px;
+      margin:0;
+      display:none;
+    }
+  }
+  .linkClipboard {
+    width: 300px;
+    text-align: center;
+    // padding-right:10px;
+  }
