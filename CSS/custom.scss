@@ -118,7 +118,7 @@
     font-size: 30px;
   }
   .headertext .Marshal {
-    font-size: 12px;
+    font-size: 20px;
   }
   .myphoto {
     src:var(--image-source);
@@ -348,19 +348,41 @@
     backface-visibility: hidden;
   
   }
-  
+  .cardFlipper{
+  width: 50%;
+  height:25px;
+  cursor: pointer;
+  border-radius: 7px;
+  border:none;
+  background:var(--highlighttext-color);
+  color:var( --navitext-color);
+  box-shadow:var(--primarybackground-color);
+  margin:20px 0px 0px 0px;
+  }
   .card-front {
     background-color: var(--secondarybackground-color);
-
     // background: transparent;
     // backdrop-filter: blur(10px);
     border: 1px solid #ddd;
     border-radius: 10px;
     text-align: center;
+    overflow: hidden;
+    img{
+      position:relative;
+      overflow: hidden;
+      scale:1.2;
+      width:100%;
+    }
+    h2{
+      margin-top: 20px;
+    }
+
   }
   .card-front >*{
-  margin-top:20px
+  margin-top:10px
   
+
+
   }
   
   .card-back {
@@ -370,6 +392,17 @@
     border-radius: 10px;
     text-align: center;
     transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    img{
+      display: flex;
+
+      flex-shrink: 1;
+      width:75%;
+    }
   
   }
 
