@@ -2,32 +2,44 @@
   font-family: TBold;
   src: url(../Fonts/Thunderbold.ttf);
 }
-.calcContainer {
+#body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Container {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: auto;
+  width: 90%;
   outline: lime 3px solid;
   padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: var(--columnhovereffect-color);
+  border-radius: 10px;
 }
-.calcContainer .calcDesc {
+.Container .calcDesc {
   margin-right: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.calcContainer .calcDesc span {
+.Container .calcDesc span {
   font-family: TBold;
   color: var(--highlighttext-color);
 }
-.calcContainer .calc {
+.Container .calc {
   outline: lime 3px solid;
   background: var(--highlighttext-color);
   padding: 20px;
   border-radius: 10px;
 }
-.calcContainer .calc form input {
+.Container .calc form input {
   outline: 0px;
   width: 60px;
   height: 60px;
@@ -36,7 +48,7 @@
   font-size: 25px;
   cursor: pointer;
 }
-.calcContainer .calc #calcequal {
+.Container .calc #calcequal {
   width: 125px;
 }
 
@@ -66,4 +78,129 @@ form .calcdisplay input {
   align-items: center;
   justify-content: center;
   list-style: none;
+}
+
+#workArea {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+  max-width: 750px;
+  padding: 0px 30px 30px;
+  border-radius: 20px;
+}
+
+#titleContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#titleContainer img {
+  width: 100px;
+  height: 100px;
+}
+
+.Todobox {
+  border-radius: 10px;
+  background-color: var(--columnhovereffect-color);
+  padding: 40px 30px 70px;
+  width: 100%;
+  max-width: 800px;
+  margin: 50px auto 40px;
+  background-color: var(--secondarybackground-color);
+}
+.Todobox h1 {
+  font-family: cursive;
+  margin-bottom: 10px;
+}
+.Todobox h2 {
+  margin-bottom: 30px;
+  font-family: cursive;
+  font-size: 16px;
+}
+.Todobox ul li {
+  display: flex;
+  flex: 1;
+  list-style: none;
+  font-size: 17px;
+  padding: 9px 8px 15px 45px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  position: relative;
+  margin-left: 20px;
+  font-family: cursive;
+}
+.Todobox ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 10%;
+  background-image: url("../public/unchecked.png");
+  background-size: cover;
+  background-position: center;
+  top: 8px;
+  left: 8px;
+}
+.Todobox ul li.checked {
+  color: #727272;
+  text-decoration: line-through;
+}
+.Todobox ul li.checked::before {
+  background-image: url("../public/checked.png");
+}
+.Todobox ul li span {
+  position: absolute;
+  right: 0px;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+}
+.Todobox ul li span:hover {
+  background-color: #c8c8c8;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0px;
+  background: #c8c8c8;
+  border-radius: 30px;
+  width: 100%;
+  height: 45px;
+  max-height: 60px;
+}
+.row input {
+  flex: 1;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  padding: 0px 30px;
+  font-weight: 14pts;
+  font-size: 16px;
+  font-family: cursive;
+}
+.row button {
+  padding: 5px 8px;
+  height: 100%;
+  max-height: 80px;
+  width: 100%;
+  max-width: 150px;
+  outline: none;
+  border: none;
+  color: var(--navitext-color);
+  background-color: var(--highlighttext-color);
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
 }/*# sourceMappingURL=forMMP.css.map */

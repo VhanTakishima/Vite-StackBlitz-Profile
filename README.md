@@ -26,3 +26,11 @@ Future task-- adding default color scheme and saving last selected color scheme 
 - Can now go to link in the new tab
 
  button's design to be updated tommorow
+
+---2024--
+ 01/23 - Happy New year got busy last few days dahil nagka sakit anak ko and ngayon lang nakapag coding ulit. 
+
+WHAT'S NEW
+- Added another Mini project which is To-do list
+- Data is saved as Local storage as of the moment
+- Will do database migration in the future when I get hold of a new device/laptop

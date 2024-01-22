@@ -61,7 +61,7 @@
     <!-- we begin here -->
     <div id="body">
       <!--Calculator begins here-->
-      <div class="calcContainer">
+      <div class="Container">
         <div class="calcDesc">
           <img class="thor" src="public/thor.gif" alt="">
           <h1>Calcula<span>THOR</span></h1>
@@ -103,15 +103,43 @@
             </div>
           </form>
         </div>
-
         <div id="thorArms">
-       
+
         </div>
-    </div>
+      </div>
     <!--Calculator ends here-->
+    <!-- ------------------- -->
+    <!-- Todo list start -->
+    <div class="Container">
+      <div class="Todobox">
+        <div id="titleContainer">
+        <img src="../public/listIcon.gif" alt="">
+        <div id="listTextArea">
+          <h1> Task Lister</h1>
+          <h2> Can be use to  list your task, set reminders, grocery list, to do list, etc.</h2>
+        </div>
+      </div>
+        <div id="workArea">
+        <div class="row">
+          <input type="text" id="inputbox" placeholder="Add your to-do-today">
+          <button onclick="addTask()">Add Task</button>
+        </div>
+        <ul id="list-container">
+          <!-- <li class="checked">List preview 1</li>
+          <li class="">List preview 1</li>
+          <li>List preview 1</li> -->
+
+        </ul>
+      </div>
+      </div>
+
+
+
+
+    </div>
+    <!-- To do list End -->
     <!--  Test begin-->
     <div>
-
     <h1> This page's code dashboard </h1>
     <ul class="codePercentage">
       <li class="d-inline">
@@ -205,8 +233,9 @@
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 <!-- Smooth Scroll -->
   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-  <script>
 
+  <script>
+    
     var scroll = new SmoothScroll('a[href*="#"]', {
       speed: 500,
       speedAsDuration: true
@@ -218,5 +247,6 @@
   <script src="JS/themes-selector.js"></script>
   <script src="JS/cardButtonFlip.js"></script>
   <script src="JS/footerbutton.js"></script>
+  <script src="JS/toDo.js"></scriptsrc>></script>
 </html>
 </html>
