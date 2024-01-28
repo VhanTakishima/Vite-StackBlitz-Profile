@@ -138,6 +138,32 @@
 
     </div>
     <!-- To do list End -->
+    <!-- Ceasarian Cipher Begins here -->
+    <div class="Container">
+        <div id="CC">
+          <h1> Ceasar Cipher Seize a Piece of Paper</h1>
+          <textarea name="codex" id="codex"></textarea>
+          <div class="row">
+            <button id="ceasarEncrypt" onclick="encryptC()">Encrypt</button>
+            <input type="text" name="ceasarKey" id="ceasarKey" oninput="inputNumbersOnly(this)" placeholder="Enter number of shifts">
+            <button id="ceasarDecrypt" onclick="decryptC()">Decrypt</button>
+          </div>
+          <div id="eDCounter">
+            <h2>Nerd Stat</h2>
+            Encrypt key clicked: <span id="eClick">0</span> || Decrypt key clicked: <span id="dClick">0</span> 
+          
+          </div>
+
+        </div>
+    </div>
+    <!-- Ceasarian Cipher Ends Here -->
+
+
+
+
+
+
+
     <!--  Test begin-->
     <div>
     <h1> This page's code dashboard </h1>
@@ -248,5 +274,6 @@
   <script src="JS/cardButtonFlip.js"></script>
   <script src="JS/footerbutton.js"></script>
   <script src="JS/toDo.js"></scriptsrc>></script>
+  <script src="JS/cCipher.js"></scriptsrc>></script>
 </html>
 </html>

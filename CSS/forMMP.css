@@ -203,4 +203,36 @@ form .calcdisplay input {
   border-radius: 20px;
   font-size: 20px;
   cursor: pointer;
+}
+
+#ceasarKey {
+  text-align: center;
+}
+
+#CC {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+  max-width: 750px;
+  padding: 0px 30px 30px;
+  border-radius: 20px;
+}
+#CC h1 {
+  margin-top: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0cap;
+  text-align: center;
+}
+
+#codex {
+  margin-top: 30px;
+  width: auto;
+  height: 150px;
+  padding: 10px;
+}
+
+#eDCounter h2 {
+  margin-bottom: 0px;
 }/*# sourceMappingURL=forMMP.css.map */
