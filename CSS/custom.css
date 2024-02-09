@@ -250,21 +250,6 @@ h1 {
 }
 
 /* will be fixing for portrait mode */
-.fixedtotop {
-  background-color: var(--highlighttext-color);
-  position: fixed;
-  top: 505px;
-  left: 88%;
-  text-align: center;
-  text-decoration: none;
-  z-index: 5;
-}
-
-.fixedtotop:hover {
-  background-color: white;
-  color: #000000;
-}
-
 #bodycontainer {
   background-color: var(--primarybackground-color);
   background-image: url("https://www.transparenttextures.com/patterns/dark-exa.png");

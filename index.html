@@ -8,10 +8,12 @@
     <!-- Link -->
     <link rel="stylesheet" href="CSS/custom.css" />
     <link rel="stylesheet" href="CSS/navi.css" />
-
+    <link rel="stylesheet" href="CSS/floatingElements.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
     <link rel="stylesheet" id="themesheet" href="CSS/Themes/default.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    
     <!-- font linK -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -159,8 +161,31 @@
     </div> -->
   </div>
   
-   <div><a href="#" class="fixedtotop btn">Go to Top</a></div> 
-
+    <!--floating elements starts here-->
+    <div><a href="#" class="fixedtotop btn">Go to Top</a></div> 
+        <!-- chatbot friday starts here -->
+        <div id="chatboxContainer">
+          <h1>F.R.I.D.A.Y chatbot</h1>
+            <ul class="chatbox">
+              <li class="chat incomingChat">
+                <span class="material-symbols-outlined">face_3</span>
+                <p>My name is F.R.I.D.A.Y, How can I help you today?</p>
+              </li>
+              <li class="chat outgoingChat">
+                <p>Lorem ipsum dolor sit amet.</p>
+              </li>
+            </ul>
+            <div class="chatInput">
+                <textarea placeholder="Enter chat..." required></textarea>
+                <span id="send-btn" class="material-symbols-outlined" img src="../public/send.png" >send</span>
+            </div>
+        </div>
+        <button class="chatToggler">
+          <span class="material-symbols-outlined">mode_comment</span>
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      <!-- chatbot friday ends here --> 
+    <!--floating elements ends here-->
     <footer class="footercontainer"> 
       <h1 class="footertitle" id="Contact"> 
         Contact with the following links
@@ -212,4 +237,5 @@
   <script src="JS/themes-selector.js"></script>
   <script src="JS/cardButtonFlip.js"></script>
   <script src="JS/footerbutton.js"></script>
+  <script src="JS/chatBot.js"></script>
 </html>
