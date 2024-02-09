@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="CSS/custom.css" />
     <link rel="stylesheet" href="CSS/navi.css" />
     <link rel="stylesheet" href="CSS/forMMP.css" />
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
     <link rel="stylesheet" id="themesheet" href="CSS/Themes/default.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -156,12 +156,11 @@
     <!-- Ceasarian Cipher Ends Here -->
     <!-- ------------------- -->
     <!-- chatbot friday starts here -->
-    <div class="Container">
       <div id="chatboxContainer">
         <h1>F.R.I.D.A.Y chatbot</h1>
           <ul class="chatbox">
             <li class="chat incomingChat">
-              <span class="artInt"><img src="../public/friday.svg"></span>
+              <span class="material-symbols-outlined">face_3</span>
               <p>My name is F.R.I.D.A.Y, How can I help you today?</p>
             </li>
             <li class="chat outgoingChat">
@@ -169,11 +168,15 @@
             </li>
           </ul>
           <div class="chatInput">
-              <textarea placeholder="Enter chat..."></textarea>
-              <span class="sendBtn"><img src="../public/send.png" width="7%"></span>
+              <textarea placeholder="Enter chat..." required></textarea>
+              <span id="send-btn" class="material-symbols-outlined" img src="../public/send.png" >send</span>
           </div>
       </div>
-    </div>
+      <button class="chatToggler">
+        <span class="material-symbols-outlined">mode_comment</span>
+        <span class="material-symbols-outlined">close</span>
+      </button>
+
 
     <!-- chatbot friday ends here --> 
     <!--  Test begin-->

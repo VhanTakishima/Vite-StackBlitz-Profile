@@ -39,3 +39,8 @@ WHAT'S NEW
 
 Added Ceasar Cipher app
 -- added nerd stats so you can check how many times you clicked the encrypt and decrypt button. xample usage, if you decrpyt "lnjbja lryqna" with key 3, 4 times. you'll get ceasar cipher. the times to click the button can act like an addtional security measure.
+
+
+02/09 
+-Started Chatbox but not yet finished.  plan to separate it to a different SASS file along with the "Go to Top" Button, so I can easily manage all fixed positioned elements
+- If i can, I'll try to integrate the  chatbot with Chat GPT or any AI learning tech with API.
