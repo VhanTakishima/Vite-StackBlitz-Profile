@@ -38,7 +38,8 @@ WHAT'S NEW
 01/28 
 
 Added Ceasar Cipher app
--- added nerd stats so you can check how many times you clicked the encrypt and decrypt button. xample usage, if you decrpyt "lnjbja lryqna" with key 3, 4 times. you'll get ceasar cipher. the times to click the button can act like an addtional security measure.
+-- added nerd stats so you can check how many times you clicked the encrypt and decrypt button. xample usage, if you decrpyt "lnjbja lryqna" with key 3, 4 times. you'll get ceasar cipher. the times to click the button can act like an addtional secu
+rity measure.
 
 
 02/09 
